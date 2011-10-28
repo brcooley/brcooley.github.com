@@ -2,24 +2,15 @@ auto: true
 server: true
 pygments: true
 markdown: maruku
-#permalink: :title/
 
 # site url
 #url: cooleyweb.com
 
-# used by css url in default.html and index.xml
-css-path: css
-
-# custom vars, most of them are used by index.xml
+# custom vars
 name: Syntax Optional
 full-name: Brett Cooley
 email: brett@cooleyweb.org
-# slogan: I make things.
-# twitter: sparanoid
 
 # exclude files for generated site
-# exclude: 
-# - README.md
-# - LICENSE
-# - Rakefile
-# - nite.tmproj
+ exclude: 
+ - README.md
