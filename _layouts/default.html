@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>{% if page.title != 'Syntax Optional' %}{{ site.name }} - {% endif %}{{ page.title }}</title>
+	<link rel="alternate" type="application/atom+xml" title="Syntax Optional - Atom" href="http://feeds.feedburner.com/benubois" />
+	<link rel="stylesheet" href="/css/master.css" />
+	<!-- <script src="/js/master.js"></script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-172060-6']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+		})();
+	</script> -->
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<p id="logo"><a href="/">Syntax Optional</a></p>
+			<nav>
+				<ul class="clearfix">
+					<li{% if page.title == 'About' %} class="selected"{% endif %}><a href="/about.html">About</a></li>
+					<li{% if page.title == 'gpg' %} class="selected"{% endif %}><a href="/gpg.txt">GPG Key</a></li>
+					<li{% if page.title == 'Resume' %} class="selected"{% endif %}><a href="/Resume.pdf">Resume</a></li>
+					<li{% if page.title == 'Posts' %} class="selected"{% endif %}><a href="/posts.html">Posts</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="content-wrap">
+		<div class="container">
+
+		{{ content }}
+			
+		</div>
+	</section>
+
+	<footer class="container">
+		<!-- <p>Copyright &copy; 2011&ndash;{{ site.time | date: "%Y" }} <a href="mailto:brett@cooleyweb.org">Brett Cooley</a></p> -->
+		<p>Copyright &copy; 2011 <a href="mailto:brett@cooleyweb.org">Brett Cooley</a></p>
+	</div>
+</body>
+</html>

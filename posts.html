@@ -1,0 +1,37 @@
+---
+layout: default
+title: Posts
+---
+
+{% for post in site.posts %}
+
+	{% if forloop.index == 1 %}
+		{% assign class = 'container post activator' %}
+		{% assign pill-class = 'post-meta-first span-3' %}
+	{% else %}
+	   {% assign class = 'container post activator separator' %}
+	   {% assign pill-class = 'post-meta-mod span-3' %}
+	{% endif %}
+
+	<div class="{{ pill-class }}">
+		<a href="{{ post.url }}" class="pill"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %d, %Y" }}</time></a>
+	</div>
+	<a href="{{ post.url }}"><div class="{{ class }}">
+		<h2>{{ post.title }}</h2>
+		<div class="snip-mod span-15 last">
+			{{ post.desc }}
+		</div></a>
+	</div>
+{% endfor %}
+
+<!-- <dl>
+  {% for post in site.posts %}
+  	{% if forloop.index != 1 %}
+		{% assign class = 'container-mod separator' %}
+	{% endif %}
+    <dt>
+      {% if post.link %}<a href={{ post.link }}>{{ post.title }}</a>{% else %}<a href={{ post.url }}/>{{ post.title }}</a>{% endif %}
+      <time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date: "%b %Y" }}</time>
+      {% if post.link %}<a href={{ post.url }}/>&para;</a>{% endif %}</dt>
+  {% endfor %}
+</dl> -->
