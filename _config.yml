@@ -12,5 +12,5 @@ full-name: Brett Cooley
 email: brett@cooleyweb.org
 
 # exclude files for generated site
- exclude: 
- - README.md
+exclude: 
+- README.md
