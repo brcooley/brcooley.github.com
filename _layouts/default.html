@@ -14,10 +14,10 @@
 			<p id="logo"><a href="/">Syntax Optional</a></p>
 			<nav>
 				<ul class="clearfix">
-					<li{% if page.title == 'About' %} class="selected"{% endif %}><a href="/about.html">About</a></li>
-					<li{% if page.title == 'gpg' %} class="selected"{% endif %}><a href="/gpg">GPG Key</a></li>
+					<li{% if page.title == 'About' %} class="selected"{% endif %}><a href="/about">About</a></li>
+					<li{% if page.title == 'GPG Key' %} class="selected"{% endif %}><a href="/gpg">GPG Key</a></li>
 					<li{% if page.title == 'Resume' %} class="selected"{% endif %}><a href="/Resume.pdf">Resume</a></li>
-					<li{% if page.title == 'Posts' %} class="selected"{% endif %}><a href="/posts.html">Posts</a></li>
+					<li{% if page.title == 'Posts' %} class="selected"{% endif %}><a href="/posts">Posts</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -32,7 +32,7 @@
 	</section>
 
 	<footer class="container">
-		<p>Copyright &copy; 2011&ndash;{{ site.time | date: "%Y" }}&nbsp; <a href="mailto:brett@cooleyweb.org">Brett Cooley</a></p>
+		<p>Copyright &copy; 2011&ndash;{{ site.time | date: "%Y" }}&nbsp; <a href="mailto:{{site.email}}">Brett Cooley</a></p>
 	</div>
 </body>
 </html>

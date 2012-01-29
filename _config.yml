@@ -2,9 +2,7 @@ auto: true
 server: true
 pygments: true
 markdown: maruku
-
-# site url
-#url: cooleyweb.com
+permalink: /posts/:year/:month/:day/:title
 
 # custom vars
 name: Syntax Optional
@@ -12,5 +10,5 @@ full-name: Brett Cooley
 email: brett@cooleyweb.org
 
 # exclude files for generated site
-exclude: 
+exclude:
 - README.md
