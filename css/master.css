@@ -333,6 +333,25 @@ div.colborder {
 	border-right: 1px dotted #BEBEBE;
 }
 
+table.pretty {
+    width: 100%;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+    border-collapse: collapse;
+    border: 1px solid #bbb;
+}
+
+    table.pretty th {
+        padding: 0.35em;
+        background: #E7E7E7;
+        border: 1px solid #bbb;
+    }
+
+    table.pretty td {
+        padding: 0.35em;
+        border: 1px dotted #bbb;
+    }
+
 /* - Code
 -------------------------------------------------------*/
 code {
