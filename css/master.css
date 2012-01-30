@@ -203,6 +203,44 @@ nav li.selected a {
 	border-radius: 3px;
 	background: #3061BE;
 }
+.tag-cloud {
+	font-family: Helvetica, Arial;
+	font-size: 120%;
+	font-variant: small-caps;
+	text-align: right;
+	margin-right: 12px;
+	margin-left: -6px;
+	line-height: 200%;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: #D0D0D0;
+}
+.tag-cloud li {
+	list-style: none;
+	/*display: inline;*/
+	padding: 3px 5px;
+	margin: 0;
+	/*-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;*/
+}
+.tag1 {
+	background: #67ABE0;
+}
+.tag2 {
+	background: #7CC0F4;
+}
+.first-tag {
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-right-radius: 3px;
+}
+.last-tag {
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-bottom-right-radius: 3px;
+}
 footer p {
 	border-top: 1px dotted #BEBEBE;
 	padding: 1em 0 0;
@@ -250,7 +288,7 @@ footer p {
 }
 .pill {
 	margin-left: 6px;
-	padding: 4px 5px;
+	padding: 3px 5px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
