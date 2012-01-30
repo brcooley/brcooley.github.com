@@ -2,7 +2,7 @@
 layout: post
 title: "Blogotubes"
 desc: "Proving xkcd wrong since '11"
-tags: meta
+tags: Meta
 ---
 
 This being my first post on the [Blogotubes][1], it should both rank high for the search terms "blogotubes" and "probably should go to sleep", of course only if you [quote the query][2].  

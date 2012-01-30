@@ -3,3 +3,4 @@ _site/*
 *.tmp
 *.log
 *.gz
+.DS_Store

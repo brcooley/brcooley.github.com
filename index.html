@@ -5,7 +5,7 @@ title: Syntax Optional
 
 {% for post in site.posts limit:3 %}
 
-	{% if forloop.index == 1 %}
+	{% if forloop.first %}
 		{% assign class = 'container post' %}
 	{% else %}
 	   {% assign class = 'container post separator' %}
@@ -18,21 +18,16 @@ title: Syntax Optional
 			<a href="{{ post.url }}" class="pill"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %d, %Y" }}</time></a><br /><br />
 			<div class="tag-cloud">
 				<ul>
-					{% assign cur = 1 %}
 					{% for tag in post.tags %}
-						{% if forloop.index == 2 * cur %}
-							{% assign class = 'tag1' %}
-							{% assign cur = cur + 1 %}
-						{% else %}
-							{% assign class = 'tag2' %}
-						{% endif %}
+						{% assign lclass = '' %}
 						{% if forloop.first %}
-							{% assign class = 'tag1 first-tag' %}
+							{% assign lclass = 'first-tag' %}
 						{% endif %}
-						{% if forloop.last %}
-							{% assign class = 'first-tag' %}
+						{% if forloop.length %}
+							{% capture lclass %}{{lclass}} last-tag{% endcapture %}
 						{% endif %}
-						<li class="{{class}}"><a href="/posts/{{tag}}">{{ tag }}</a></li>
+						{% capture lclass %}{{lclass}} {% cycle 'tag1', 'tag2' %}{% endcapture %}
+						<li class="{{lclass}}"><a href="/posts/{{tag}}">{{tag}}</a></li>
 					{% endfor %}
 				</ul>
 			</div>
