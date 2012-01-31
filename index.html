@@ -15,7 +15,7 @@ title: Syntax Optional
 
 		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		<div class="post-meta span-3">
-			<a href="{{ post.url }}" class="pill"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %d, %Y" }}</time></a><br /><br />
+			<a href="{{ post.url }}" class="pill"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %d, %Y" }}</time></a>
 			<div class="tag-cloud">
 				<ul>
 					{% for tag in post.tags %}

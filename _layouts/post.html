@@ -6,6 +6,21 @@ layout: default
 	<h2>{{ page.title }}</h2>
 	<div class="post-meta span-3">
 		<time class="pill" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %d, %Y" }}</time>
+		<div class="tag-cloud">
+			<ul>
+				{% for tag in page.tags %}
+					{% assign lclass = '' %}
+					{% if forloop.first %}
+						{% assign lclass = 'first-tag' %}
+					{% endif %}
+					{% if forloop.last %}
+						{% capture lclass %}{{lclass}} last-tag{% endcapture %}
+					{% endif %}
+					{% capture lclass %}{{lclass}} {% cycle 'tag1', 'tag2' %}{% endcapture %}
+					<li class="{{lclass}}">{{tag}}</li>
+				{% endfor %}
+			</ul>
+		</div>
 	</div>
 	<div class="post-content span-15 last">
 		{{ content }}
