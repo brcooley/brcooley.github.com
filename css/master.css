@@ -208,8 +208,7 @@ nav li.selected a {
 	font-size: 120%;
 	font-variant: small-caps;
 	text-align: right;
-	margin-right: 12px;
-	margin-left: 6px;
+	margin: 0px 6px;
 	line-height: 200%;
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
@@ -284,15 +283,22 @@ footer p {
 	font-family: Helvetica, Arial;
 }
 .pill {
-	margin-left: 6px;
+	display: block;
+	text-align: center;
+	margin: 0px 6px;
 	padding: 3px 5px;
-	-webkit-border-top-right-radius: 3px;
-	   -moz-border-top-right-radius: 3px;
-			border-top-right-radius: 3px;
-	-webkit-border-top-left-radius: 3px;
-	   -moz-border-top-left-radius: 3px;
-			border-top-left-radius: 3px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
 	color: #FFF;
+}
+.pill-tag {
+	-webkit-border-bottom-right-radius: 0px;
+	   -moz-border-bottom-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	   -moz-border-bottom-left-radius: 0px;
+			border-bottom-left-radius: 0px;
 }
 a.pill {
 	background: #3061BE;
