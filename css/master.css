@@ -217,19 +217,18 @@ nav li.selected a {
 	background: #D7D7D7;
 }
 .tag-cloud li {
+	/*color: #FFF;*/
 	list-style: none;
-	/*display: inline;*/
 	padding: 3px 5px;
 	margin: 0;
 }
 .tag1 {
-	background: #7CC0F4;
+	background: #98B1DF;
 }
 .tag2 {
-	background: #67ABE0;
+	background: #7395D4;
 }
 .first-tag {
-	background: #7CC0F4;
 	-webkit-border-top-right-radius: 3px;
 	   -moz-border-top-right-radius: 3px;
 			border-top-right-radius: 3px;

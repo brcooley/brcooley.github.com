@@ -23,15 +23,3 @@ title: Posts
 		</div></a>
 	</div>
 {% endfor %}
-
-<!-- <dl>
-  {% for post in site.posts %}
-  	{% if forloop.index != 1 %}
-		{% assign class = 'container-mod separator' %}
-	{% endif %}
-    <dt>
-      {% if post.link %}<a href={{ post.link }}>{{ post.title }}</a>{% else %}<a href={{ post.url }}/>{{ post.title }}</a>{% endif %}
-      <time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date: "%b %Y" }}</time>
-      {% if post.link %}<a href={{ post.url }}/>&para;</a>{% endif %}</dt>
-  {% endfor %}
-</dl> -->

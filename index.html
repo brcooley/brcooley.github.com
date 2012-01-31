@@ -23,11 +23,11 @@ title: Syntax Optional
 						{% if forloop.first %}
 							{% assign lclass = 'first-tag' %}
 						{% endif %}
-						{% if forloop.length %}
+						{% if forloop.last %}
 							{% capture lclass %}{{lclass}} last-tag{% endcapture %}
 						{% endif %}
 						{% capture lclass %}{{lclass}} {% cycle 'tag1', 'tag2' %}{% endcapture %}
-						<li class="{{lclass}}"><a href="/posts/{{tag}}">{{tag}}</a></li>
+						<li class="{{lclass}}">{{tag}}</li>
 					{% endfor %}
 				</ul>
 			</div>
