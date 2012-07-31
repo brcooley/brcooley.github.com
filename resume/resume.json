@@ -1,0 +1,34 @@
+{
+	"name"	: "Brett Cooley",
+	"email"	: "brett@cooleyweb.org",
+	"phone"	: "303 601 8090",
+	"github": "github.com/brcooley",
+	"stack"	: "stackoverflow.com/users/950912",
+	"events": [
+		{
+			"name":"w&m",
+			"cat" :"edu",
+			"desc":[
+				"a",
+				"b",
+				"c",
+				"d"
+			],
+			"offset":0,
+			"data":[
+				[1,"Start of college"]
+			]
+		}, {
+			"name":"",
+			"cat" :"",
+			"desc":[
+				"a",
+				"b"
+			],
+			"offset":0,
+			"data":[
+				[1,""]
+			]
+		}
+	]
+}
