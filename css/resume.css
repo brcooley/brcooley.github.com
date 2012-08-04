@@ -1,0 +1,53 @@
+/*
+Syntax error: File to import not found or unreadable: base.
+              Load paths:
+                c:/Proj/brcooley.github.com
+                c:/Proj/brcooley.github.com/css
+        on line 1 of css/resume.scss
+
+1: @import "base";
+2: 
+3: * {
+4: 	margin: 0px;
+5: 	padding: 0px;
+6: }
+
+Backtrace:
+css/resume.scss:1
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/import_node.rb:64:in `rescue in import'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/import_node.rb:42:in `import'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/import_node.rb:25:in `imported_file'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:149:in `rescue in visit_import'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:154:in `visit_import'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `map'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:7:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/root_node.rb:20:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/engine.rb:300:in `_render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/engine.rb:247:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:200:in `each'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:298:in `block in watch'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: base.\A               Load paths:\A                 c:/Proj/brcooley.github.com\A                 c:/Proj/brcooley.github.com/css\A         on line 1 of css/resume.scss\A \A 1: @import \"base\";\A 2: \A 3: * {\A 4: 	margin: 0px;\A 5: 	padding: 0px;\A 6: }"; }
