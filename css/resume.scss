@@ -25,12 +25,20 @@ body {
 	}
 }
 header {
+	display: inline;
 	font-size: 200%;
-	border-bottom: 5px solid #000;
+	// border-bottom: 5px solid #000;
 
-	&:first {
-		color: #f30;
-	}
+	// &:first {
+	// 	color: #f30;
+	// }
+}
+#return {
+	display: none;
+	float: right;
+}
+#sep {
+	border-top: 5px solid #000;
 }
 section {
 	padding: 1% 0% 1% 1%;
