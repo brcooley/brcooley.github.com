@@ -58,7 +58,6 @@ nav {
 	width: 10%;
 	height: 100%;
 	float: left;
-	// display: inline;
 	border-right: 1px dotted #ddd;
 }
 .nav-item {
@@ -80,7 +79,11 @@ nav {
 }
 #graphic {
 	width: 80%;
-	margin: 0px auto;
+	margin: 0% auto;
+}
+#page-text {
+	@extend #graphic;
+	padding: 2% 0%;
 }
 .code {
 	font-family: consolas, monospace;

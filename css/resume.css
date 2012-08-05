@@ -72,9 +72,12 @@ nav {
   color: #fff;
   background-color: #000; }
 
-#graphic {
+#graphic, #page-text {
   width: 80%;
-  margin: 0px auto; }
+  margin: 0% auto; }
+
+#page-text {
+  padding: 2% 0%; }
 
 .code {
   font-family: consolas, monospace;

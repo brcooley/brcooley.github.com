@@ -1,4 +1,4 @@
-{
+function get_resume() { return {
 	"name"	: "Brett Cooley",
 	"email"	: "brett@cooleyweb.org",
 	"phone"	: "303 601 8090",
@@ -113,4 +113,4 @@
 			]
 		}
 	]
-}
+}; }
