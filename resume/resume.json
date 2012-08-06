@@ -54,9 +54,9 @@ function get_resume() { return {
 			"name":"W&M Dept of CS",
 			"cat" :"work",
 			"desc":[
-				"a",
-				"b",
-				"c"
+				"Assist entry-level Computer Science students with class projects and homework",
+				"Focus on reinforcing basic programming concepts and best practices",
+				"Help all students with using tools in a Linux environment"
 			],
 			"data":[
 				[2,2011,1,2,"Start as Lab Consultant"],
@@ -66,8 +66,10 @@ function get_resume() { return {
 			"name":"DynamX Consulting",
 			"cat" :"work",
 			"desc":[
-				"a",
-				"b"
+				"Assist President with Department of Defense funded modeling and simulation research projects",
+				"Create compelling visualizations for proposals and presentations",
+				"Build and maintain all online assets including a modern website",
+				"Provide technical support and hardware purchasing advise"
 			],
 			"data":[
 				[2,2011,7,1,"Start as Research Assistant/Sysadmin"],
@@ -80,8 +82,8 @@ function get_resume() { return {
 			"name":"W&M Dept of CS",
 			"cat" :"work",
 			"desc":[
-				"a",
-				"b"
+				"Conducted independent research on security in the Android framework",
+				"Authored paper pending acceptance to IEEE INFOCOM"
 			],
 			"data":[
 				[2,2011,9,3,"Start as Research Assistant"],
@@ -100,6 +102,27 @@ function get_resume() { return {
 				[2,2012,6,5,"Start as SDET Intern"],
 				[1,2012,7,5,"Presented on project to SVP"],
 				[2,2012,9,5,"End as SDET Intern"]
+			]
+		}, {
+			"name":"Python",
+			"cat" :"skills",
+			"desc":[
+				"a",
+				"b"
+			],
+			"data":[
+				[2,2010,1,2,"Started learning Python out of curosity"],
+				[0,-1,-1,2,""]
+			]
+		}, {
+			"name":"",
+			"cat" :"skills",
+			"desc":[
+				"a",
+				"b"
+			],
+			"data":[
+				[0,""]
 			]
 		}, {
 			"name":"",
