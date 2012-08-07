@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Brett Cooley" />
+	<meta name="description" content="Personal website and blog" />
+	<title>{{ page.title }} - Brett Cooley</title>
+	<link rel="stylesheet" href="/css/resume2.css" />
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-28907940-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script> <!-- Need to chage to include from src -->
+</head>
+<body>
+	<div id="content">
+		<header><a href="/resume">Brett Cooley</a></header>
+		<div id="return"><a href="//cooleyweb.org">Syntax Optional</a></div>
+		<div id="sep"><hr class="implied"></div>
+		<section>
+			{{ content }}
+		</section>
+		<footer>
+			Last Updated: {{ site.time | date: "%B %d, %Y"}}
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="resume.json"></script>
+</html>
