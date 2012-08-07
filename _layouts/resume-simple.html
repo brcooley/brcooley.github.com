@@ -5,7 +5,7 @@
 	<meta name="author" content="Brett Cooley" />
 	<meta name="description" content="Personal website and blog" />
 	<title>{{ page.title }} - Brett Cooley</title>
-	<link rel="stylesheet" href="/css/resume2.css" />
+	<link rel="stylesheet" href="/css/resume-simple.css" />
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-28907940-1']);
@@ -17,18 +17,24 @@
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 	</script>
-	<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script> <!-- Need to chage to include from src -->
 </head>
 <body>
 	<div id="content">
-		<header><a href="/resume">Brett Cooley</a></header>
+		<header>
+			<div class="border-left"></div>
+				<a href="/resume">Brett Cooley</a><div id="border-right">
+			</div>
+		</header>
 		<div id="return"><a href="//cooleyweb.org">Syntax Optional</a></div>
-		<div id="sep"><hr class="implied"></div>
 		<section>
-			{{ content }}
+			<div class="border-left"></div>
+				{{ content }}
+			<div class="border-right"></div>
 		</section>
 		<footer>
-			Last Updated: {{ site.time | date: "%B %d, %Y"}}
+			<div class="border-left"></div>
+				Last Updated: {{ site.time | date: "%B %d, %Y"}}
+			<div class="border-right"></div>
 		</footer>
 	</div>
 </body>

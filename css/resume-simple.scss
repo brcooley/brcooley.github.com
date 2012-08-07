@@ -1,0 +1,57 @@
+@import "base";
+@import "simple";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+body {
+	// padding: 1%;
+	// width: 80%;
+	// margin: 10px auto;
+}
+header {
+	font-size: 200%;
+	text-align: center;
+	width: 30%;
+	height: 50%;
+	left: (100% - 30%) / 2;
+	// padding: 1%;
+	// margin: 1% 0;
+
+	@include partial-border(left,50%,20%);
+	@include partial-border(top,20%,70%);
+
+}
+footer {
+	font-size: 90%;
+	color: #999;
+}
+section {
+	position: relative;
+	width: 50%;
+	padding: 2%;
+	margin: 1% auto;
+
+	@include partial-border(right,40%,50%);
+	@include partial-border(bottom,15%,10%);
+}
+
+
+// .class
+
+.code {
+	font-family: consolas, monospace;
+	border-radius: 4px;
+	background-color: #ddd;
+	padding: 1px;
+}
+
+
+// #id
+
+#return {
+	display: none;
+	float: right;
+}
