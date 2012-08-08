@@ -1,41 +1,57 @@
 @import "base";
 @import "simple";
 
+$grid_size:		8%;
+$grid_pad:		.5%;
+// $border_size:	.2%;
+
+$name_height:	2 * $grid_size;
+$edu_height:	3 * $grid_size;
+$work_height:	3 * $grid_size;
+$skill_height:	4 * $grid_size;
+$proj_height:	3 * $grid_size;
+$award_height:	2 * $grid_size;
+
+$name_width:	3 * $grid_size;
+$edu_width:		4 * $grid_size;
+$work_width:	5 * $grid_size;
+$skill_width:	2 * $grid_size;
+$proj_width:	4 * $grid_size;
+$award_width:	2 * $grid_size;
+
+$name_left: (100% - ($name_width)) / 2;
+$edu_left: $name_left - $edu_width;
+$work_left: $name_left + ($name_width / 3);
+$skill_left: $name_left + $name_width; 
+$proj_left: $name_left - ($name_width / 3);
+$award_left: $name_left - ($name_width / 3);
+
+$name_top: (100% - ($name_height)) / 2;
+$edu_top: $name_top;
+$work_top: $name_top - $work_height;
+$skill_top: $name_top; 
+$proj_top: $name_top + $name_height;
+$award_top: $name_top - $award_height;
+
+
 * {
 	margin: 0px;
 	padding: 0px;
-	position: relative;
+	// position: relative;
 }
 body {
 	// padding: 1%;
 	// width: 80%;
 	// margin: 10px auto;
+	height: 100%;
 }
-header {
-	font-size: 200%;
-	text-align: center;
-	width: 30%;
-	height: 50%;
-	left: (100% - 30%) / 2;
-	// padding: 1%;
-	// margin: 1% 0;
-
-	@include partial-border(left,50%,20%);
-	@include partial-border(top,20%,70%);
-
+h1 {
+	font-size: 1.5em;
 }
 footer {
+	display: none;
 	font-size: 90%;
 	color: #999;
-}
-section {
-	position: relative;
-	width: 50%;
-	padding: 2%;
-	margin: 1% auto;
-
-	@include partial-border(right,40%,50%);
-	@include partial-border(bottom,15%,10%);
 }
 
 
@@ -47,11 +63,88 @@ section {
 	background-color: #ddd;
 	padding: 1px;
 }
-
+.container {
+	// padding: .5%;
+	// float: left;
+	position: absolute;
+	padding: $grid_pad;
+}
 
 // #id
 
+#content{
+	height: 100%;
+}
+#name {
+	font-size: 1.67em;
+	text-align: center;
+
+	width: $name_width;
+	height: $name_height;
+	top: $name_top;
+	left: $name_left;
+
+	border: $border_size solid $border_color;
+}
+#edu {
+	height: $edu_height;
+	width: $edu_width;
+	top: $edu_top;
+	left: $edu_left;
+
+	@include partial-border(top,25%,0%);
+	border-left: $border_size solid $border_color;
+	@include partial-border(bottom,25%,0%);
+	@include partial-border(right,66%,0%);
+}
+#work {
+	text-align: right;
+
+	height: $work_height;
+	width: $work_width;
+	top: $work_top;
+	left: $work_left;
+
+	@include partial-border(top,30%,70%);
+	border-left: $border_size solid $border_color;
+	border-bottom: $border_size solid $border_color;
+	@include partial-border(right,17%,0%);
+}
+#skill {
+	height: $skill_height;
+	width: $skill_width;
+	top: $skill_top;
+	left: $skill_left;
+
+	border-top: $border_size solid $border_color;
+	border-left: $border_size solid $border_color;
+	@include partial-border(bottom,25%,75%);
+	@include partial-border(right,33%,66%);	
+}
+#proj {
+	height: $proj_height;
+	width: $proj_width;
+	top: $proj_top;
+	left: $proj_left;
+
+	@include partial-border(top,75%,25%);
+	@include partial-border(left,50%,50%);
+	@include partial-border(bottom,50%,0%);
+	border-right: $border_size solid $border_color;
+}
+#award {
+	text-align: center;
+
+	height: $award_height;
+	width: $award_width;
+	top: $award_top;
+	left: $award_left;
+
+	@include partial-border(top,25%,0%);
+	@include partial-border(left,25%,0%);
+	border-bottom: $border_size solid $border_color;
+	border-right: $border_size solid $border_color;
+}
 #return {
 	display: none;
-	float: right;
 }

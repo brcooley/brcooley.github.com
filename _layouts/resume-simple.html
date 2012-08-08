@@ -20,17 +20,15 @@
 </head>
 <body>
 	<div id="content">
-		<header>
+		<div id="name" class="container">
 			<div class="border-left"></div>
-				<a href="/resume">Brett Cooley</a><div id="border-right">
-			</div>
-		</header>
+				<h1><a href="/resume">Brett Cooley</a></h1>
+			<div id="border-right"></div>
+		</div>
 		<div id="return"><a href="//cooleyweb.org">Syntax Optional</a></div>
-		<section>
-			<div class="border-left"></div>
-				{{ content }}
-			<div class="border-right"></div>
-		</section>
+		
+		{{ content }}
+		
 		<footer>
 			<div class="border-left"></div>
 				Last Updated: {{ site.time | date: "%B %d, %Y"}}
