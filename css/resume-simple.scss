@@ -2,8 +2,7 @@
 @import "simple";
 
 $grid_size:		8%;
-$grid_pad:		.5%;
-// $border_size:	.2%;
+$grid_pad:		.4%;
 
 $name_height:	2 * $grid_size;
 $edu_height:	3 * $grid_size;
@@ -19,7 +18,7 @@ $skill_width:	2 * $grid_size;
 $proj_width:	4 * $grid_size;
 $award_width:	2 * $grid_size;
 
-$name_left: (100% - ($name_width)) / 2;
+$name_left: ((100% - $name_width) / 2);
 $edu_left: $name_left - $edu_width;
 $work_left: $name_left + ($name_width / 3);
 $skill_left: $name_left + $name_width; 
@@ -84,7 +83,12 @@ footer {
 	top: $name_top;
 	left: $name_left;
 
-	border: $border_size solid $border_color;
+	// border: $border_size solid $border_color;
+	@include partial-border(top,100%,0%);
+	@include partial-border(left,100%,0%);
+	@include partial-border(bottom,100%,0%);
+	@include partial-border(right,100%,0%);
+
 }
 #edu {
 	height: $edu_height;
@@ -93,7 +97,8 @@ footer {
 	left: $edu_left;
 
 	@include partial-border(top,25%,0%);
-	border-left: $border_size solid $border_color;
+	// border-left: $border_size solid $border_color;
+	@include partial-border(left,100%,0%);
 	@include partial-border(bottom,25%,0%);
 	@include partial-border(right,66%,0%);
 }
@@ -106,8 +111,10 @@ footer {
 	left: $work_left;
 
 	@include partial-border(top,30%,70%);
-	border-left: $border_size solid $border_color;
-	border-bottom: $border_size solid $border_color;
+	@include partial-border(left,100%,0%);
+	@include partial-border(bottom,100%,0%);
+	// border-left: $border_size solid $border_color;
+	// border-bottom: $border_size solid $border_color;
 	@include partial-border(right,17%,0%);
 }
 #skill {
@@ -116,8 +123,10 @@ footer {
 	top: $skill_top;
 	left: $skill_left;
 
-	border-top: $border_size solid $border_color;
-	border-left: $border_size solid $border_color;
+	// border-top: $border_size solid $border_color;
+	// border-left: $border_size solid $border_color;
+	@include partial-border(top,100%,0%);
+	@include partial-border(left,100%,0%);
 	@include partial-border(bottom,25%,75%);
 	@include partial-border(right,33%,66%);	
 }
@@ -130,7 +139,8 @@ footer {
 	@include partial-border(top,75%,25%);
 	@include partial-border(left,50%,50%);
 	@include partial-border(bottom,50%,0%);
-	border-right: $border_size solid $border_color;
+	// border-right: $border_size solid $border_color;
+	@include partial-border(right,100%,0%);
 }
 #award {
 	text-align: center;
@@ -142,8 +152,10 @@ footer {
 
 	@include partial-border(top,25%,0%);
 	@include partial-border(left,25%,0%);
-	border-bottom: $border_size solid $border_color;
-	border-right: $border_size solid $border_color;
+	// border-bottom: $border_size solid $border_color;
+	// border-right: $border_size solid $border_color;
+	@include partial-border(bottom,100%,0%);
+	@include partial-border(right,100%,0%);
 }
 #return {
 	display: none;
