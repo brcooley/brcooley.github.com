@@ -18,7 +18,8 @@ a {
 
 * {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  position: relative; }
 
 body {
   height: 100%; }
@@ -38,7 +39,6 @@ footer {
   padding: 1px; }
 
 .container {
-  position: absolute;
   padding: 0.4%; }
 
 #content {
@@ -48,209 +48,24 @@ footer {
   font-size: 1.67em;
   text-align: center;
   width: 24%;
-  height: 16%;
-  top: 42%;
-  left: 38%; }
-  #name:before {
-    content: "";
-    position: absolute;
-    border-top: 5px solid black;
-    left: 0%;
-    top: 0%;
-    right: 0%; }
-  #name .border-left {
-    content: "";
-    position: absolute;
-    border-left: 5px solid black;
-    left: 0%;
-    top: 0%;
-    bottom: 0%; }
-  #name:after {
-    content: "";
-    position: absolute;
-    border-bottom: 5px solid black;
-    left: 0%;
-    right: 0%;
-    bottom: 0%; }
-  #name .border-right {
-    content: "";
-    position: absolute;
-    border-right: 5px solid black;
-    top: 0%;
-    right: 0%;
-    bottom: 0%; }
+  border: 5px solid black; }
 
 #edu {
-  height: 24%;
-  width: 32%;
-  top: 42%;
-  left: 6%; }
-  #edu:before {
-    content: "";
-    position: absolute;
-    border-top: 5px solid black;
-    left: 0%;
-    top: 0%;
-    right: 75%; }
-  #edu .border-left {
-    content: "";
-    position: absolute;
-    border-left: 5px solid black;
-    left: 0%;
-    top: 0%;
-    bottom: 0%; }
-  #edu:after {
-    content: "";
-    position: absolute;
-    border-bottom: 5px solid black;
-    left: 0%;
-    right: 75%;
-    bottom: 0%; }
-  #edu .border-right {
-    content: "";
-    position: absolute;
-    border-right: 5px solid black;
-    top: 0%;
-    right: 0%;
-    bottom: 34%; }
+  width: 32%; }
 
 #work {
   text-align: right;
-  height: 24%;
-  width: 40%;
-  top: 18%;
-  left: 46%; }
-  #work:before {
-    content: "";
-    position: absolute;
-    border-top: 5px solid black;
-    left: 70%;
-    top: 0%;
-    right: 0%; }
-  #work .border-left {
-    content: "";
-    position: absolute;
-    border-left: 5px solid black;
-    left: 0%;
-    top: 0%;
-    bottom: 0%; }
-  #work:after {
-    content: "";
-    position: absolute;
-    border-bottom: 5px solid black;
-    left: 0%;
-    right: 0%;
-    bottom: 0%; }
-  #work .border-right {
-    content: "";
-    position: absolute;
-    border-right: 5px solid black;
-    top: 0%;
-    right: 0%;
-    bottom: 83%; }
+  width: 40%; }
 
 #skill {
-  height: 32%;
-  width: 16%;
-  top: 42%;
-  left: 62%; }
-  #skill:before {
-    content: "";
-    position: absolute;
-    border-top: 5px solid black;
-    left: 0%;
-    top: 0%;
-    right: 0%; }
-  #skill .border-left {
-    content: "";
-    position: absolute;
-    border-left: 5px solid black;
-    left: 0%;
-    top: 0%;
-    bottom: 0%; }
-  #skill:after {
-    content: "";
-    position: absolute;
-    border-bottom: 5px solid black;
-    left: 75%;
-    right: 0%;
-    bottom: 0%; }
-  #skill .border-right {
-    content: "";
-    position: absolute;
-    border-right: 5px solid black;
-    top: 66%;
-    right: 0%;
-    bottom: 1%; }
+  width: 16%; }
 
 #proj {
-  height: 24%;
-  width: 32%;
-  top: 58%;
-  left: 30%; }
-  #proj:before {
-    content: "";
-    position: absolute;
-    border-top: 5px solid black;
-    left: 25%;
-    top: 0%;
-    right: 0%; }
-  #proj .border-left {
-    content: "";
-    position: absolute;
-    border-left: 5px solid black;
-    left: 0%;
-    top: 50%;
-    bottom: 0%; }
-  #proj:after {
-    content: "";
-    position: absolute;
-    border-bottom: 5px solid black;
-    left: 0%;
-    right: 50%;
-    bottom: 0%; }
-  #proj .border-right {
-    content: "";
-    position: absolute;
-    border-right: 5px solid black;
-    top: 0%;
-    right: 0%;
-    bottom: 0%; }
+  width: 32%; }
 
 #award {
   text-align: center;
-  height: 16%;
-  width: 16%;
-  top: 26%;
-  left: 30%; }
-  #award:before {
-    content: "";
-    position: absolute;
-    border-top: 5px solid black;
-    left: 0%;
-    top: 0%;
-    right: 75%; }
-  #award .border-left {
-    content: "";
-    position: absolute;
-    border-left: 5px solid black;
-    left: 0%;
-    top: 0%;
-    bottom: 75%; }
-  #award:after {
-    content: "";
-    position: absolute;
-    border-bottom: 5px solid black;
-    left: 0%;
-    right: 0%;
-    bottom: 0%; }
-  #award .border-right {
-    content: "";
-    position: absolute;
-    border-right: 5px solid black;
-    top: 0%;
-    right: 0%;
-    bottom: 0%; }
+  width: 16%; }
 
 #return {
   display: none; }
