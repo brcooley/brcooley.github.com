@@ -4,13 +4,6 @@
 $grid_size:		8%;
 $grid_pad:		.4%;
 
-$name_height:	2 * $grid_size;
-$edu_height:	3 * $grid_size;
-$work_height:	3 * $grid_size;
-$skill_height:	4 * $grid_size;
-$proj_height:	3 * $grid_size;
-$award_height:	2 * $grid_size;
-
 $name_width:	3 * $grid_size;
 $edu_width:		4 * $grid_size;
 $work_width:	5 * $grid_size;
@@ -18,19 +11,14 @@ $skill_width:	2 * $grid_size;
 $proj_width:	4 * $grid_size;
 $award_width:	2 * $grid_size;
 
+$row2_left: (100% - ($edu_width + $name_width + $skill_width + 6 * $grid_pad)) / 2;
+
 $name_left: ((100% - $name_width) / 2);
 $edu_left: $name_left - $edu_width;
 $work_left: $name_left + ($name_width / 3);
 $skill_left: $name_left + $name_width; 
 $proj_left: $name_left - ($name_width / 3);
 $award_left: $name_left - ($name_width / 3);
-
-$name_top: (100% - ($name_height)) / 2;
-$edu_top: $name_top;
-$work_top: $name_top - $work_height;
-$skill_top: $name_top; 
-$proj_top: $name_top + $name_height;
-$award_top: $name_top - $award_height;
 
 
 * {
@@ -67,6 +55,8 @@ footer {
 	// float: left;
 	// position: absolute;
 	padding: $grid_pad;
+	// float: left;
+	display: inline-block;
 }
 
 // #id
@@ -79,7 +69,6 @@ footer {
 	text-align: center;
 
 	width: $name_width;
-	// height: $name_height;
 	// top: $name_top;
 	// left: $name_left;
 
@@ -91,10 +80,10 @@ footer {
 
 }
 #edu {
-	// height: $edu_height;
+	clear: left;
 	width: $edu_width;
 	// top: $edu_top;
-	// left: $edu_left;
+	// left: $row2_left;
 
 	// @include partial-border(top,25%,0%);
 	// // border-left: $border_size solid $border_color;
@@ -104,8 +93,8 @@ footer {
 }
 #work {
 	text-align: right;
+	clear: right;
 
-	// height: $work_height;
 	width: $work_width;
 	// top: $work_top;
 	// left: $work_left;
@@ -118,7 +107,6 @@ footer {
 	// @include partial-border(right,17%,0%);
 }
 #skill {
-	// height: $skill_height;
 	width: $skill_width;
 	// top: $skill_top;
 	// left: $skill_left;
@@ -131,10 +119,10 @@ footer {
 	// @include partial-border(right,33%,66%);	
 }
 #proj {
-	// height: $proj_height;
+	clear: left;
 	width: $proj_width;
 	// top: $proj_top;
-	// left: $proj_left;
+	// left: $row3_left;
 
 	// @include partial-border(top,75%,25%);
 	// @include partial-border(left,50%,50%);
@@ -145,10 +133,9 @@ footer {
 #award {
 	text-align: center;
 
-	// height: $award_height;
 	width: $award_width;
 	// top: $award_top;
-	// left: $award_left;
+	// left: $row1_left;
 
 	// @include partial-border(top,25%,0%);
 	// @include partial-border(left,25%,0%);
