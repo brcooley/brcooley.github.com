@@ -1,0 +1,51 @@
+@import "base";
+@import "simple";
+
+$grid_pad:		.4%;
+$border_std:	$border_size solid $border_color;
+
+* {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+body {
+	// padding: 1%;
+	// width: 80%;
+	// margin: 10px auto;
+	height: 100%;
+	margin: 10px;
+}
+h1 {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 1em;
+	font-weight: bold;
+	display: inline-block;
+}
+li {
+	display: block;
+	padding-left: 8px;
+}
+footer {
+	display: none;
+	font-size: 90%;
+	color: #999;
+}
+
+
+// .class
+
+.code {
+	font-family: consolas, monospace;
+	border-radius: 4px;
+	background-color: #ddd;
+	padding: 1px;
+}
+
+// #id
+
+#return {
+	display: none;
+}

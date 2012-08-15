@@ -5,7 +5,7 @@
 	<meta name="author" content="Brett Cooley" />
 	<meta name="description" content="Personal website and blog" />
 	<title>{{ page.title }} - Brett Cooley</title>
-	<link rel="stylesheet" href="/css/resume-simple.css" />
+	<link rel="stylesheet" href="/css/resume-abstract.css" />
 	<!-- <script type="text/javascipt">
 	// 	console.log("We are functioning");
 
@@ -32,7 +32,6 @@
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })(); */
 	</script>
-	<script type="text/javascript" src="/js/jquery-1.8.js"></script>	
 </head>
 <body>
 	<div id="content">
@@ -42,9 +41,9 @@
 			<div id="border-right"></div>
 		</div>
 		<div id="return"><a href="//cooleyweb.org">Syntax Optional</a></div>
-
+		
 		{{ content }}
-
+		
 		<footer>
 			<div class="border-left"></div>
 				Last Updated: {{ site.time | date: "%B %d, %Y"}}
@@ -53,16 +52,4 @@
 	</div>
 </body>
 <!-- <script type="text/javascript" src="resume.json"></script> -->
-<script>
-	$(document).ready(function() {
-		$(".left, .right").mouseenter(function() {
-			if ($(this).hasClass("closed")) {
-				var row_num = $(this).parent().attr("id");
-				$("#" + row_num).children()
-					.toggleClass("open")
-					.toggleClass("closed");
-			}
-		});
-	});
-</script>
 </html>

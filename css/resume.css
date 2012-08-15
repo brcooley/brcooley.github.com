@@ -2,16 +2,28 @@ html {
   height: 100%; }
 
 body {
+  color: #444;
   font-family: "Segoe UI", Calibri, Tahoma, sans-serif;
-  font-size: 100%; }
+  font-size: 100%;
+  overflow: auto; }
 
 h1 {
   font-variant: small-caps;
   font-size: 300%; }
 
+h2 {
+  font-weight: bold;
+  font-size: 110%; }
+
+ul li {
+  display: block; }
+
 a {
   text-decoration: none;
   color: inherit; }
+
+footer {
+  clear: both; }
 
 .implied {
   display: none; }
