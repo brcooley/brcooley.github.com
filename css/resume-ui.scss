@@ -1,0 +1,109 @@
+@import "base";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	// box-sizing: border-box;
+}
+body {
+	height: 100%;
+	background-color: #f6f6f6;
+	// background-color: #606060;
+}
+h1 {
+	font-size: 1.5em;
+}
+nav {
+	display: inline;
+}
+footer {
+	padding-top: 5px;
+	font-size: 90%;
+	color: #bbb;
+}
+
+
+// .class
+
+.code {
+	font-family: consolas, monospace;
+	border-radius: 4px;
+	background-color: #ddd;
+	padding: 1px;
+}
+.icon {
+	display: table-cell;
+	width: 20%;
+
+	text-align: center;
+	vertical-align: middle;
+
+	border: 5px solid #f6f6f6;
+}
+.container {
+	background-color: #222;
+	color: #ddd;
+}
+.svg-icon {
+	fill: #ddd;
+
+	-webkit-transition: fill .5s ease;
+
+	&:hover {
+		fill: #fff;
+		-webkit-transition: fill .5s ease;
+	}
+}
+.label {
+	display: block;
+	clear: both;
+	// visibility: hidden;
+	padding: 0px 0px 5px;
+}
+
+// #id
+
+#content{
+	width: 60%;
+	height: 100%;
+	margin: 0% auto;
+}
+#top {
+	display: table;
+	width: 100%;
+	// border-spacing: 10px;
+	border-collapse: collapse;
+}
+#name {
+	width: 40%;
+	text-align: left;
+	vertical-align: middle;
+	border-left: 0;
+}
+#edu-nav {
+
+}
+#work-nav {
+
+}
+#skill-nav {
+	border-right: 0;
+}
+#edu {
+
+}
+#work {
+
+}
+#skill {
+
+}
+#proj {
+
+}
+#why {
+
+}
+#return {
+	display: none;
+}

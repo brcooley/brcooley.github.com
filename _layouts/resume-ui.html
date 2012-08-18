@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Brett Cooley" />
+	<meta name="description" content="Personal website and blog" />
+	<title>{{ page.title }} - Brett Cooley</title>
+	<link rel="stylesheet" href="/css/resume-ui.css" />
+	<script type="text/javascript">
+	  /* var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-28907940-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })(); */
+	</script>
+	<!-- <script type="text/javascript" src="/js/jquery-1.8.js"></script> -->
+</head>
+<body>
+	<div id="content">
+		<header id="top">
+			<div id="name" class="icon container">
+				<h1><a href="/resume">Brett Cooley</a></h1>
+				<h2><a href="mailto:{{ site.email }}">{{ site.email }}</a></h2>
+			</div>
+			<div id="edu-nav" class="icon container">{% include edu.svg %}<span class="label">Education</span></div>
+			<div id="work-nav" class="icon container">{% include work.svg %}<span class="label">Work</span></div>
+			<div id="skill-nav" class="icon container">{% include skill.svg %}<span class="label">Code</span></div>
+		</header>
+		<section>
+			<div class="container">
+				{{ content }}
+			</div>
+		</section>
+		<footer>
+			Last Updated: {{ site.time | date: "%B %d, %Y"}}
+		</footer>
+	</div>
+</body>
+<!-- <script type="text/javascript" src="resume.json"></script> -->
+</html>
