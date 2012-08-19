@@ -7,11 +7,11 @@
 }
 body {
 	height: 100%;
-	background-color: #f6f6f6;
+	background-color: #eee;
 	// background-color: #606060;
 }
 h1 {
-	font-size: 1.5em;
+	font-size: 150%;
 }
 nav {
 	display: inline;
@@ -38,9 +38,10 @@ footer {
 	text-align: center;
 	vertical-align: middle;
 
-	border: 5px solid #f6f6f6;
+	border: 5px solid #eee;
 }
 .container {
+	padding: 1%;
 	background-color: #222;
 	color: #ddd;
 }
@@ -77,8 +78,24 @@ footer {
 #name {
 	width: 40%;
 	text-align: left;
-	vertical-align: middle;
+	vertical-align: bottom;
 	border-left: 0;
+	h1 {
+		font-size: 300%;
+	}
+	h2 {
+		font-size: 100%;
+		font-style: italic;
+		font-weight: normal;
+		color: #a0a0a0;
+
+		-webkit-transition: color .5s ease;
+
+		&:hover {
+			color: #ddd;
+			-webkit-transition: color .5s ease;
+		}
+	}
 }
 #edu-nav {
 

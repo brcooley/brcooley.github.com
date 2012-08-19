@@ -8,6 +8,7 @@ permalink: /posts/:year/:month/:day/:title
 name: Syntax Optional
 full-name: Brett Cooley
 email: brett@cooleyweb.org
+phone: 303 601 8090
 
 # exclude files for generated site
 exclude:
