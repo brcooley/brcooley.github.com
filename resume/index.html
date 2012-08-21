@@ -4,53 +4,131 @@ layout: resume-ui
 company: Test Co
 ---
 
-
-<div id="edu" >
+<div id="why" class="container">
 	<header>
-		<h1>Education</h1>
+		<h1>Why {{ page.company }} should  hire me</h1>
 	</header>
 	<section>
-		<h2>College of William & Mary</h2>
-		<h4>Aug 2009 - May 2013</h4>
-		<h6>Computer Science & Mathematics</h6>
-		<ul>
-			<li>Defending an Honors Thesis in Computer Science</li>
-			<li>Current GPA: 3.7 (Computer Science: 4.0)</li>
-		</ul>
+		
 	</section>
 </div>
-<div id="work" >
-	<header>
-		<h1>Work</h1>
-	</header>
-	<section>
-		<h2>SDET Intern</h2>
+<div id="edu" class="container">
+		<div id="edu-main" class="sub full-h med-w">
+			<h2>College of William & Mary</h2>
+			<h4>Aug 2009 - May 2013</h4>
+			<h6>B.S. Computer Science & Mathematics</h6>
+			<ul>
+				<li>CS classes covering data structures, algorithms, systems programming, architecture, network security, and <abbr title="General Purpose Graphical Processing Unit">GPGPU</title> programming</li>
+				<li>Math classes covering calculus, linear algebra, matrix analysis, abstract algebra, probability, and quantum computing</li>
+				<li>Defending an senior honors thesis in Computer Science</li>
+				<li>Current cumulative GPA of 3.63</li>
+				<li>Recieved Monroe Scholarship (Spring 2011) and Jane Mahoney Scholarship (Fall 2011) for outstanding academic achievement</li>
+				<li>Organized and facilitated first ever W&M Hackathon (Spring 2011), organizing second W&M hackathon for Fall 2012</li>
+				<li>Current W&M Student ACM President (2011-Present)</li>
+			</ul>
+		</div>
+		<div id="edu-res" class="sub med-h small-w">
+			<header>
+				<h3>Android Research</h2>
+			</header>
+			<p>Pending publication on a class of native phishing attacks, and a novel defense technique.  Worked under Dr. Haining Wang.</p>
+		</div>
+		<div id="edu-gpa" class="sub med-h small-w">
+			 <div class="big-num">4.0</div>
+			<p>Computer Science GPA</p>
+		</div>
+		<div id="edu-icpc" class="sub med-h med-w">
+			<header>
+				<h3><abbr title="Association for Computing Machinery">ACM</abbr> <abbr title="International Collegiate Programming Contest">ICPC</abbr></h2>
+			</header>
+			<ul>
+				<li>Only sophamore member from W&M to compete, placed 1<sup>st</sup> on-site, 12<sup>th</sup> out of 166 teams (2010 Regionals)</li>
+				<li>Lead first W&M team to qualify for world finals, placing 1<sup>st</sup> on-site and 2<sup>nd</sup> out of 164 teams (2011 Regionals)</li>
+				<li>Competed at the North American practice contest hosted by Univeristy of Chicago, and world finals hosted by University of Warsaw in Warsaw, Poland (2012 World Finals)</li>
+			</ul>
+		</div>
+</div>
+<div id="work" class="container">
+	<div id="work-ms" class="sub large-h med-w">
+		<h2>Microsoft Azure (Networking)</h2>
 		<h4>Jun 2012 - Aug 2012</h4>
-		<h6>Microsoft Azure Networking</h6>
+		<h6>SDET Intern</h6>
 		<ul>
 			<li>Developed internal tool for simulating network failure and congestion (fault-injection)</li>
 			<li>Saw project from concept to completion including design, architecture, implementation, testing, and documentation</li>
+			<li>Prsented project in front of <abbr title="Corporate Vice President">CVP</abbr> of Server & Cloud Division, received positive feedback on project and presentation</li>
 		</ul>
-	</section>
+	</div>
+	<div id="work-wm-l" class="sub small-h med-w">
+		<h2>W&M Computer Science Department</h2>
+		<h4>Jan 2011 - Current</h4>
+		<h6>Lab Consultant</h6>
+		<ul>
+			<li>Assist entry level Computer Science students with class projects and homework</li>
+			<li>Advise all students on departmental lab procedures and Unix related questions</li>
+		</ul>
+	</div>
+	<div id="work-wm-r" class="sub small-h med-w">
+		<h2>W&M Computer Science Department</h2>
+		<h4>Sep 2011 - Jan 2012</h4>
+		<h6>Research Assitant</h6>
+		<ul>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<div id="work-dy" class="sub large-h med-w">
+		<h2>DynamX Consulting</h2>
+		<h4>Jul 2011 - Current</h4>
+		<h6>Research Assitant, Systems Admin</h6>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
 </div>
-<div id="why" >
+<!-- <div id="why">
 	<header>
 		<h1>Why I want to work for {{ page.company }}</h1>
 	</header>
 	<section>
 	</section>
-</div>
-<div id="skill" >
-	<header>
-		<h1>Skills</h1>
-	</header>
-	<section>
-	</section>
-</div>
-<div id="proj" >
-	<header>
-		<h1>Projects</h1>
-	</header>
-	<section>
-	</section>
+</div>-->
+<div id="skill" class="container">
+	<div id="skill-gh" class="sub large-h large-w">
+		<a href="//github.com/brcooley"><h2>Github</h2></a>
+		<ul>
+			<li>9+ public projects, including open-source contributions and personal projects ranging from websites to automation utilities to customized dotfiles</li>
+			<li><a href="//github.com/brcooley/dynamx_web">Public website</a> for DynamX Consulting, utilizing modern technoligies including HTML5, CSS3, and <a href="//d3js.org">d3.js</a></li>
+			<li><a href="//github.com/brcooley/drupdate">Automation</a> for Drupal updating and deployment to shared hosting via FTP</li>
+			<li>Issues and pull request for popular open source software including Github's own <a href="//github.com/github/linguist/pull/218">linguist</a> and Python testing framework <a href="//github.com/nose-devs/nose/issues/526">nose</a>, among others</li>
+		</ul>
+	</div>
+	<div id="skill-lang" class="sub full-h small-w">
+		<h2>Lanugages & Tools</h2>
+		<ul>
+			<li>Python (Everything)</li>
+			<li>C/C++ (Drivers, Networking)</li>
+			<li>git (<abbr title="Distributed Version Control System">DVCS</abbr>)</li>
+			<li>Sublime Text 2 (Text editor)</li>
+			<li>Java (Algorithms, Android)</li>
+			<li>HTML/CSS (Modern websites)</li>
+			<li>Bash (System control)</li>
+			<li>Erlang (Learning)</li>
+			<li>Javascript (d3.js, Learning)</li>
+			<li>Go (Learning)</li>
+		</ul>
+	</div>
+	<div id="skill-so" class="sub small-h med-w">
+		<a href="//stackoverflow.com/users/950912"><h2>Stack Overflow</h2></a>
+		<ul>
+			<li>Over 1,000 points for over 50 answers</li>
+			<li>Answers on topics from <a href="//stackoverflow.com/a/7812002/950912">temporal locality</a> to <a href="//stackoverflow.com/a/7770477/950912">hybrid sorting efficencies</a> to <a href="//stackoverflow.com/a/7728798/950912">graph algorithms</a> and <a href="//stackoverflow.com/users/950912?tab=answers">many others</a></li>
+		</ul>
+	</div>
+	<div id="skill-yr" class="sub small-h small-w">
+		<div class="big-num">7</div>
+		<p>Year of programming</p>
+	</div>
 </div>
