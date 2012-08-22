@@ -2,6 +2,9 @@
 title: Resume
 layout: resume-ui
 company: Test Co
+reason1: <<REASON1>>
+reason2: I have a passion for software, and view developing it as a craft.  I strongly believe in meritocracy, and will debate anything to find the best ideas.
+reason3: <<REASON3>>
 ---
 
 <div id="why" class="container">
@@ -9,7 +12,11 @@ company: Test Co
 		<h1>Why {{ page.company }} should  hire me</h1>
 	</header>
 	<section>
-		
+		<ul>
+			<li>{{ page.reason1 }}</li>
+			<li>{{ page.reason2 }}</li>
+			<li>{{ page.reason3 }}</li>
+		</ul>
 	</section>
 </div>
 <div id="edu" class="container">
@@ -88,13 +95,6 @@ company: Test Co
 		</ul>
 	</div>
 </div>
-<!-- <div id="why">
-	<header>
-		<h1>Why I want to work for {{ page.company }}</h1>
-	</header>
-	<section>
-	</section>
-</div>-->
 <div id="skill" class="container">
 	<div id="skill-gh" class="sub large-h large-w">
 		<a href="//github.com/brcooley"><h2>Github</h2></a>
@@ -114,7 +114,9 @@ company: Test Co
 			<li>Sublime Text 2 (Text editor)</li>
 			<li>Java (Algorithms, Android)</li>
 			<li>HTML/CSS (Modern websites)</li>
+			<li>Sass (Better CSS)</li>
 			<li>Bash (System control)</li>
+			<li>VirtualBox (Testing)</li>
 			<li>Erlang (Learning)</li>
 			<li>Javascript (d3.js, Learning)</li>
 			<li>Go (Learning)</li>

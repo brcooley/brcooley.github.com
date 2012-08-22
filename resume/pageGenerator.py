@@ -30,12 +30,18 @@ COMPANY_LIST = [
 	"CloudScaling"
 ]
 
-reasons = {
-	"Palantir":"",
-	"SpiderOak":"",
-	"FullContact":"",
-	"Netflix":"",
-	"Aglie Diagnosis":"",
+# Could add about sysadmining/hardware, all OSs
+fullStack = "I enjoy working on the full stack, diving into everything from the kernel to CSS. I'm not afraid of jumping into other people's code, fixing bugs and submitting them back upstream"
+network = ""
+distributed = "I enjoy designing and implementing distributed systems.  That includes architecting fault-tolerant, asynchronous services and researching the latest in lock-free data structures"
+passion = "I have a passion for {}.  I truely believe that"
+
+reasons = { 
+	"Palantir": ["","",""],
+	"SpiderOak": ["","",""],
+	"FullContact": ["","",""],
+	"Netflix": ["","",""],
+	"Aglie Diagnosis": ["","",""],
 	"WiFast":"",
 	"Woven":"",
 	"Counsyl":"",
@@ -69,7 +75,9 @@ for company in COMPANY_LIST:
 	with open("index.html","r") as f:
 		fileContents = f.read()
 	with open("index.html","w") as f:
-		newF = re.sub(r'(?<=company: ).*',company,fileContents)
-		newF = re.sub(r'',reasons[company],newF)
+		newF = re.sub(r'(?<=company: ).*',company,fileContents) # Should be \w or similar
+		newF = re.sub(r'(?<=reason1: )<<REASON1>>',reasons[company][0],newF)
+		newF = re.sub(r'(?<=reason2: )<<REASON2>>',reasons[company][1],newF)
+		newF = re.sub(r'(?<=reason3: )<<REASON3>>',reasons[company][2],newF)
 		print(newF,file=f)
 	os.chdir('..')
