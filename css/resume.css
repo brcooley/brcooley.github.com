@@ -16,7 +16,12 @@ h2 {
   font-size: 110%; }
 
 ul li {
-  display: block; }
+  display: block;
+  padding-bottom: 6px;
+  text-align: justify; }
+
+li:before {
+  content: "- "; }
 
 a {
   text-decoration: none;

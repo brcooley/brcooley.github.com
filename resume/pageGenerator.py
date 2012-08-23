@@ -38,7 +38,7 @@ craft = "I have a passion for software, and view developing it as a craft. I str
 passion = ""
 
 reasons = { 
-	"Palantir": ["","",""],
+	"Palantir": [fullStack,"",""],
 	"SpiderOak": ["","",""],
 	"FullContact": ["","",""],
 	"Netflix": ["","",distributed],

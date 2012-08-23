@@ -19,6 +19,11 @@ h2 {
 }
 ul li {
 	display: block;
+	padding-bottom: 6px;
+	text-align: justify;
+}
+li:before {
+	content:"- "
 }
 a {
 	text-decoration: none;

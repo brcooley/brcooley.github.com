@@ -1,0 +1,17 @@
+$light-primary:		#ddd;
+$light-emphasis:	#fff;
+$light-secondary:	#888;
+$dark-primary:		#222;
+$dark-emphasis:		#000;
+$dark-secondary:	#888;
+
+$duration: .5s;
+
+@mixin highlight($baseColor, $hoverColor) {
+	color: $baseColor;
+	-webkit-transition: color $duration ease;
+	&:hover {
+		color: $hoverColor;
+		-webkit-transition: color $duration ease;
+	}
+}
