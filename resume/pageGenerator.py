@@ -31,35 +31,36 @@ COMPANY_LIST = [
 ]
 
 # Could add about sysadmining/hardware, all OSs
-fullStack = "I enjoy working on the full stack, diving into everything from the kernel to CSS. I'm not afraid of jumping into other people's code, fixing bugs and submitting them back upstream"
-network = ""
-distributed = "I enjoy designing and implementing distributed systems.  That includes architecting fault-tolerant, asynchronous services and researching the latest in lock-free data structures"
-passion = "I have a passion for {}.  I truely believe that"
+fullStack = "I enjoy working on the full stack, diving into everything from the kernel to CSS. I'm not afraid of jumping into other people's code, fixing bugs, and submitting them back upstream"
+network = "Multiple of my past projects have been working with level 2-4 networking. I enjoy fully understanding complex routing and network algorithms"
+distributed = "I enjoy designing and implementing distributed systems. That includes architecting fault-tolerant, asynchronous services and researching the latest in lock-free data structures"
+craft = "I have a passion for software, and view developing it as a craft. I strongly believe in meritocracy, and will debate anything to find the best ideas"
+passion = ""
 
 reasons = { 
 	"Palantir": ["","",""],
 	"SpiderOak": ["","",""],
 	"FullContact": ["","",""],
-	"Netflix": ["","",""],
+	"Netflix": ["","",distributed],
 	"Aglie Diagnosis": ["","",""],
-	"WiFast":"",
-	"Woven":"",
-	"Counsyl":"",
-	"Heroku":"",
-	"Hipmunk":"",
-	"Mixpanel":"",
-	"Pinterest":"",
-	"PubNub":"",
-	"Twilio":"",
-	"Spotify":"",
-	"Opscode":"",
-	"VMWare":"",
-	"SumoLogic":"",
-	"Nest":"",
-	"Thumbtack":"",
-	"Cloudera":"",
-	"Cloudflare":"",
-	"CloudScaling":""
+	"WiFast": ["","",""],
+	"Woven": ["","",""],
+	"Counsyl": ["","",""],
+	"Heroku": ["",network,""],
+	"Hipmunk": ["","",""],
+	"Mixpanel": ["","",""],
+	"Pinterest": ["","",""],
+	"PubNub": ["","",""],
+	"Twilio": ["","",""],
+	"Spotify": ["","",""],
+	"Opscode": ["","",""],
+	"VMWare": ["","",""],
+	"SumoLogic": ["","",""],
+	"Nest": ["","",""],
+	"Thumbtack": ["","",""],
+	"Cloudera": ["","",""],
+	"Cloudflare": ["","",""],
+	"CloudScaling": ["","",""]
 }
 
 if os.path.basename(os.getcwd()) != 'resume':
