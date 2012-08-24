@@ -1,0 +1,41 @@
+<div id="work" class="container">
+	<div id="work-ms" class="sub med-w">
+		<h2>Microsoft Azure (Networking)</h2>
+		<h4>Jun 2012 - Aug 2012</h4>
+		<h6>SDET Intern</h6>
+		<ul>
+			<li>Developed internal tool for simulating network failure and congestion (fault-injection)</li>
+			<li>Saw project from concept to completion including design, architecture, implementation, testing, and documentation</li>
+			<li>Prsented project in front of <abbr title="Corporate Vice President">CVP</abbr> of Server & Cloud Division, received positive feedback on project and presentation</li>
+		</ul>
+	</div>
+	<div id="work-wm-l" class="sub med-w">
+		<h2>W&M Computer Science Department</h2>
+		<h4>Jan 2011 - Current</h4>
+		<h6>Lab Consultant</h6>
+		<ul>
+			<li>Assist entry level Computer Science students with class projects and homework</li>
+			<li>Advise all students on departmental lab procedures and Unix related questions</li>
+		</ul>
+	</div>
+	<div id="work-wm-r" class="sub med-w">
+		<h2>W&M Computer Science Department</h2>
+		<h4>Sep 2011 - Jan 2012</h4>
+		<h6>Research Assitant</h6>
+		<ul>
+			<li>Conducted independent research on security in the Android framework</li>
+			<li>Authored paper pending acceptance to IEEE INFOCOM 2013</li>
+		</ul>
+	</div>
+	<div id="work-dy" class="sub med-w">
+		<h2>DynamX Consulting</h2>
+		<h4>Jul 2011 - Current</h4>
+		<h6>Research Assitant, Systems Admin</h6>
+		<ul>
+			<li>Assist President with Department of Defense funded modeling and simulation research projects</li>
+			<li>Build and maintain all online assets including a modern website</li>
+			<li>Create compelling visualizations for proposals and presentations</li>
+			<li>Provide technical support and hardware purchasing advise</li>
+		</ul>
+	</div>
+</div>

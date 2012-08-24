@@ -1,0 +1,34 @@
+$bodyFonts: "Segoe UI", Tahoma, sans-serif;
+
+html {
+	height: 100%;
+}
+body {
+	color: #444;
+	font-family: $bodyFonts;
+	font-size: 100%;
+	overflow: auto;
+}
+h1 {
+	font-variant: small-caps;
+	font-size: 300%;
+}
+h2 {
+	font-weight: bold;
+	font-size: 110%;
+}
+ul li {
+	display: block;
+	padding-bottom: 6px;
+	text-align: justify;
+}
+li:before {
+	content:"- "
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+footer {
+	clear: both;
+}

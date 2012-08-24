@@ -1,0 +1,139 @@
+function get_resume() { return {
+	"name"	: "Brett Cooley",
+	"email"	: "brett@cooleyweb.org",
+	"phone"	: "303 601 8090",
+	"github": "github.com/brcooley",
+	"stack"	: "stackoverflow.com/users/950912",
+	"events": [
+		{
+			"name":"William & Mary",
+			"cat" :"edu",
+			"desc":[
+				"Pursuing a B.S. in Computer Science and Mathematics",
+				"Expected graduation date: May 2013",
+				"Defending an Honors Thesis in Computer Science in April 2013",
+				"Current GPA: 3.7"
+			],
+			"data":[
+				[2,2009,8,1,"Start of college"],
+				[1,2009,12,2,"Made dean's list Fall 2009"],
+				[1,2010,5,2,"Made dean's list Spring 2010"],
+				[2,2010,8,3,"Start as Student Assembly Undersecretary of Academic Reform"],
+				[0,2010,12,2,""],
+				[1,2011,5,3,"Made dean's list Spring 2011, end of Student Assembly duties"],
+				[2,2011,8,3,"Start of W&M ACM Student President"],
+				[1,2011,10,4,"Start ACM ICPC Regionals practice"],
+				[0,2011,12,2,""],
+				[1,2012,1,3,"Start ACM ICPC Worlds practice"],
+				[1,2012,3,4,"Planning begins for W&M Hackathon"],
+				[1,2012,4,5,"Run 1st W&M Hackathon, attend ICPC Practice at UChicago"]
+			]
+		}, {
+			"name":"W&M IT Department",
+			"cat" :"work",
+			"desc":[
+				"Setup, filmed, and conducted interview with campus administrators",
+				"Edited audio/video footage from these interviews"
+			],
+			"data":[
+				[1,2009,8,1,"Start as Multimedia Consultant"],
+				[1,2010,5,1,"End as Multimedia Consultant"]
+			]
+		}, {
+			"name":"Office Max",
+			"cat" :"work",
+			"desc":[
+				"Reorganized entire stock warehouse to improve efficient retrieval",
+				"Almost convinced manager to replace workers with robots"
+			],
+			"data":[
+				[1,2010,6,3,"Start @ Office Max"],
+				[1,2010,8,3,"End @ Office Max"]
+			]
+		}, {
+			"name":"W&M Dept of CS",
+			"cat" :"work",
+			"desc":[
+				"Assist entry-level Computer Science students with class projects and homework",
+				"Focus on reinforcing basic programming concepts and best practices",
+				"Help all students with using tools in a Linux environment"
+			],
+			"data":[
+				[2,2011,1,2,"Start as Lab Consultant"],
+				[0,-1,-1,2,""]
+			]
+		}, {
+			"name":"DynamX Consulting",
+			"cat" :"work",
+			"desc":[
+				"Assist President with Department of Defense funded modeling and simulation research projects",
+				"Create compelling visualizations for proposals and presentations",
+				"Build and maintain all online assets including a modern website",
+				"Provide technical support and hardware purchasing advise"
+			],
+			"data":[
+				[2,2011,7,1,"Start as Research Assistant/Sysadmin"],
+				[1,2012,3,3,"Begin website design"],
+				[2,2012,6,1,"Hiatus taken from DynamX"],
+				[2,2012,8,3,"Start again at DynamX"],
+				[0,-1,-1,2,""]
+			]
+		}, {
+			"name":"W&M Dept of CS",
+			"cat" :"work",
+			"desc":[
+				"Conducted independent research on security in the Android framework",
+				"Authored paper pending acceptance to IEEE INFOCOM"
+			],
+			"data":[
+				[2,2011,9,3,"Start as Research Assistant"],
+				[2,2012,1,3,"End as Research Assistant"]
+			]
+		}, {
+			"name":"Microsoft",
+			"cat" :"work",
+			"desc":[
+				"Worked on the Windows Azure Networking team",
+				"Developed a distributed network fault-injection tool",
+				"c",
+				"d",
+			],
+			"data":[
+				[2,2012,6,5,"Start as SDET Intern"],
+				[1,2012,7,5,"Presented on project to SVP"],
+				[2,2012,9,5,"End as SDET Intern"]
+			]
+		}, {
+			"name":"Python",
+			"cat" :"skills",
+			"desc":[
+				"a",
+				"b"
+			],
+			"data":[
+				[2,2010,1,2,"Started learning Python out of curiosity"],
+				[0,-1,-1,2,""]
+			]
+		}, {
+			"name":"",
+			"cat" :"skills",
+			"desc":[
+				"a",
+				"b"
+			],
+			"data":[
+				[0,""]
+			]
+		}, {
+			"name":"",
+			"cat" :"",
+			"desc":[
+				"a",
+				"b"
+			],
+			"data":[
+				[0,""]
+			]
+		}
+	]
+}; }

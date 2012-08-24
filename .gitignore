@@ -4,3 +4,5 @@ _site/*
 *.log
 *.gz
 .DS_Store
+__pycache__
+.sass-cache

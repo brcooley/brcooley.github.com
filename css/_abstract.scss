@@ -1,0 +1,99 @@
+$border_size: 5px;
+$border_color: #333;
+
+$grid_size:		9%;
+$grid_size_w:	$grid_size; // 160px;
+$grid_size_h:	$grid_size; // 90px;
+$grid_pad_w:	.8%;
+$grid_pad_h:	.45%;
+
+$name_height:	2 * $grid_size_h;
+$edu_height:	3 * $grid_size_h;
+$work_height:	3 * $grid_size_h;
+$skill_height:	4 * $grid_size_h;
+$proj_height:	3 * $grid_size_h;
+$award_height:	2 * $grid_size_h;
+
+$name_width:	3 * $grid_size_w;
+$edu_width:		4 * $grid_size_w;
+$work_width:	5 * $grid_size_w;
+$skill_width:	2 * $grid_size_w;
+$proj_width:	4 * $grid_size_w;
+$award_width:	2 * $grid_size_w;
+
+$name_left: ((100% - $name_width) / 2);
+// $name_left: ((1920px - $name_width) / 2);
+$edu_left: $name_left - $edu_width;
+$work_left: $name_left + ($name_width / 3);
+$skill_left: $name_left + $name_width; 
+$proj_left: $name_left - ($name_width / 3);
+$award_left: $name_left - ($name_width / 3);
+
+$name_top: (100% - ($name_height)) / 2;
+// $name_top: (1030px - $name_height) / 2;
+$edu_top: $name_top;
+$work_top: $name_top - $work_height;
+$skill_top: $name_top; 
+$proj_top: $name_top + $name_height;
+$award_top: $name_top - $award_height;
+
+@mixin partial-border($side, $size, $offset, $color: $border-color) {
+	// @include partial-border-#{$side}($size, $offset, $color);
+	@if $side == "left" {
+		@include partial-border-left($size, $offset, $color);
+	}
+	@if $side == "top" {
+		@include partial-border-top($size, $offset, $color);
+	}
+	@if $side == "right" {
+		@include partial-border-right($size, $offset, $color);
+	}
+	@if $side == "bottom" {
+		@include partial-border-bottom($size, $offset, $color);
+	}
+}
+
+@mixin partial-border-left($size, $offset, $color) {
+	.border-left {
+		content: "";
+		position: absolute;
+		border-left: $border_size solid $color;
+		left: 0%;
+		top: $offset;
+		// right: 0%;
+		bottom: (100% - ($offset + $size));
+	}
+}
+@mixin partial-border-top($size, $offset, $color) {
+	&:before {
+		content: "";
+		position: absolute;
+		border-top: $border_size solid $color;
+		left: $offset;
+		top: 0%;
+		right: (100% - ($offset + $size));
+		// bottom: 0%;
+	}
+}
+@mixin partial-border-right($size, $offset, $color) {
+	.border-right {
+		content: "";
+		position: absolute;
+		border-right: $border_size solid $color;
+		// left: 0%;
+		top: $offset;
+		right: 0%;
+		bottom: (100% - ($offset + $size));
+	}
+}
+@mixin partial-border-bottom($size, $offset, $color) {
+	&:after {
+		content: "";
+		position: absolute;
+		border-bottom: $border_size solid $color;
+		left: $offset;
+		// top: 0%;
+		right: (100% - ($offset + $size));
+		bottom: 0%;
+	}
+}

@@ -1,0 +1,302 @@
+@import "base";
+@import "ui";
+
+$fg: $light-primary;
+$bg: $dark-primary;
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	height: 100%;
+	background-color: $fg;
+	// background-color: #606060;
+}
+h1 {
+	font-size: 150%;
+}
+footer {
+	text-align: right;
+	font-size: 90%;
+	
+	a {
+		@include highlight($light-secondary,$fg);		
+	}
+}
+
+
+// .class
+
+.container {
+	padding: 1%;
+	background-color: $bg;
+	color: $fg;
+
+	header {
+		margin-bottom: 1%;
+	}
+
+	h2 {
+		display: inline;
+		clear: left;
+		float: left;
+	}
+	h4 {
+		display: inline;
+		clear: right;
+		float: right;
+		text-align: right;
+	}
+	h6 {
+		padding-bottom: 16px;
+		clear: both;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 80%;
+	}
+}
+.icon {
+	display: table-cell;
+	width: 20%;
+
+	text-align: center;
+	vertical-align: middle;
+
+	color: rgba(201,201,201,0);
+	fill: rgba(255,255,255,0.8);
+
+	border: 10px solid $fg;
+	-webkit-transition: border .75s ease, color .75s ease, fill .5s ease;
+
+	&:hover {
+
+		color: $fg;
+		fill: $light-emphasis;
+
+		// border-bottom: 5px solid $bg;
+		-webkit-transition: border .5s ease, color .5s ease, fill .5s ease;
+	}
+}
+.label {
+	display: block;
+	clear: both;
+
+	font-variant: small-caps;
+	font-size: 120%;
+	font-weight: bold;
+	// visibility: hidden;
+	// padding: 0px 0px 2px;
+	// color: inherit;
+	// -webkit-transition: visibility .5s ease;
+	// @include highlight(rgba(201,201,201,0),$fg);
+}
+.sub {
+	display: inline-block;
+	font-size: 95%;
+	line-height: 120%;
+	vertical-align: top;
+	// border: 1px solid #666;
+
+	p {
+		text-align: justify;
+	}
+}
+.small-w {
+	width: 20%;
+}
+.med-w {
+	width: 45%;
+}
+.large-w {
+	width: 70%;
+}
+.big-num {
+	line-height: 100%;
+	font-weight: bold;
+	font-size: 400%;
+	clear: both;
+}
+.right {
+	float: right;
+	text-align: right;
+}
+
+// #id
+
+#wrapper {
+	height: 100%;
+	margin: 0 auto;
+}
+@media (min-width: 1599px) {
+	#wrapper{
+		width: 60%;
+	}
+}
+@media (min-width: 1199px) {
+	#wrapper {
+		width: 70%;
+	}
+}
+@media (min-width: 799px) {
+	#wrapper {
+		width: 80%;
+	}
+}
+@media (max-width: 798px) {
+	#wrapper {
+		width: 90%;
+	}
+}
+#top {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+}
+#content {
+	a {
+		// @include highlight(rgba(172,221,196,0.7),#cec)
+		@include highlight($light-secondary,$fg);
+	}
+}
+#name {
+	width: 40%;
+	text-align: left;
+	vertical-align: middle;
+	border-left: 0;
+	color: $fg;
+
+	h1 {
+		font-size: 300%;
+	}
+	h2 {
+		font-size: 100%;
+		font-style: italic;
+		font-weight: normal;
+		@include highlight($light-secondary,$fg);
+	}
+}
+#work-nav {
+	svg {
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+}
+#skill-nav {
+	border-right: 0;
+}
+#why {
+	border-bottom: 10px solid $fg;
+
+	h1 {
+		font-size: 200%;
+		font-style: small-caps;
+		text-align: center;		
+	}
+	section {
+		text-align: left;
+	}
+}
+#edu {
+	// display: none;
+	border-bottom: 10px solid $fg;
+}
+#edu-main {
+	margin-right: 9%;
+
+	h6 {
+		margin-bottom: 16px;
+	}
+}
+#edu-res {
+	margin-right: 5%;
+
+	p {
+		margin-top: 5px;
+	}
+}
+#edu-gpa {
+	margin-top: 10px;
+	text-align: center;
+
+	p {
+		font-size: 80%;
+		font-style: italic;
+		text-align: inherit;
+	}
+}
+#edu-icpc {
+	position: relative;
+	top: -175px;
+	left: 4px;
+	margin-left: 54%;
+	margin-bottom: -180px;
+
+	h3 {
+		margin-bottom: -2px;
+	}
+}
+#work {
+	// display: none;
+	border-bottom: 10px solid $fg;
+}
+#work-ms {
+	margin-right: 9%;
+	margin-bottom: 50px;
+}
+#work-wm-r {
+	margin-right: 9%;
+}
+#work-dy {
+	position: relative;
+	top: -50px;
+	margin-bottom: -50px;
+}
+#skill {
+	// display: none;
+	border-bottom: 10px solid $fg;
+}
+#skill-gh {
+	margin-right: 9%;
+
+	h2 {
+		margin-bottom: 5px;
+	}
+	ul {
+		clear: both;
+	}
+}
+#skill-lang {
+	h2 {
+		margin-bottom: 5px;
+	}
+	ul {
+		clear: both;
+	}
+}
+#skill-so {
+	position: relative;
+	top: -100px;
+	margin-bottom: -100px;
+	margin-right: 4.5%;
+
+	h2 {
+		margin-bottom: 5px;
+	}
+	ul {
+		clear: both;
+	}
+}
+#skill-yr {
+	position: relative;
+	top: -80px;
+	margin-bottom: -80px;
+	text-align: center;
+
+	p {
+		font-size: 80%;
+		font-style: italic;
+		text-align: inherit;
+	}
+}
