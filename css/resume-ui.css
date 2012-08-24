@@ -3,7 +3,7 @@ html {
 
 body {
   color: #444;
-  font-family: "Segoe UI", Calibri, Tahoma, sans-serif;
+  font-family: "Segoe UI", Tahoma, sans-serif;
   font-size: 100%;
   overflow: auto; }
 
@@ -30,9 +30,6 @@ a {
 footer {
   clear: both; }
 
-.implied {
-  display: none; }
-
 * {
   margin: 0px;
   padding: 0px;
@@ -45,10 +42,8 @@ body {
 h1 {
   font-size: 150%; }
 
-nav {
-  display: inline; }
-
 footer {
+  text-align: right;
   font-size: 90%; }
   footer a {
     color: #888888;
@@ -127,14 +122,22 @@ footer {
   float: right;
   text-align: right; }
 
-.bg-link {
-  display: inline-block; }
-
 #wrapper {
-  width: 60%;
   height: 100%;
-  margin: 0% auto; }
+  margin: 0 auto; }
 
+@media (min-width: 1599px) {
+  #wrapper {
+    width: 60%; } }
+@media (min-width: 1199px) {
+  #wrapper {
+    width: 70%; } }
+@media (min-width: 799px) {
+  #wrapper {
+    width: 80%; } }
+@media (max-width: 798px) {
+  #wrapper {
+    width: 90%; } }
 #top {
   display: table;
   width: 100%;
@@ -150,7 +153,7 @@ footer {
 #name {
   width: 40%;
   text-align: left;
-  vertical-align: bottom;
+  vertical-align: middle;
   border-left: 0;
   color: #dddddd; }
   #name h1 {
@@ -173,11 +176,13 @@ footer {
   border-right: 0; }
 
 #why {
-  text-align: center;
   border-bottom: 10px solid #dddddd; }
   #why h1 {
     font-size: 200%;
-    font-style: small-caps; }
+    font-style: small-caps;
+    text-align: center; }
+  #why section {
+    text-align: left; }
 
 #edu {
   border-bottom: 10px solid #dddddd; }

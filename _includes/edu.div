@@ -1,0 +1,36 @@
+<div id="edu" class="container">
+	<div id="edu-main" class="sub med-w">
+		<h2>College of William & Mary</h2>
+		<h4>Aug 2009 - May 2013</h4>
+		<h6>B.S. Computer Science & Mathematics</h6>
+		<ul>
+			<li>CS classes covering data structures, algorithms, systems programming, architecture, network security, and <abbr title="General Purpose Graphical Processing Unit">GPGPU</title> programming</li>
+			<li>Math classes covering calculus, linear algebra, matrix analysis, abstract algebra, probability, and quantum computing</li>
+			<li>Defending an senior honors thesis in Computer Science</li>
+			<li>Current cumulative GPA of 3.63</li>
+			<li>Recieved Monroe Scholarship (Spring 2011) and Jane Mahoney Scholarship (Fall 2011) for outstanding academic achievement</li>
+			<li>Organized and facilitated first ever W&M Hackathon (Spring 2011), organizing second W&M hackathon for Fall 2012</li>
+			<li>Current W&M Student ACM President (2011-Present)</li>
+		</ul>
+	</div>
+	<div id="edu-res" class="sub small-w">
+		<header>
+			<h3>Android Research</h2>
+		</header>
+		<p>Pending publication on a class of native phishing attacks, and a novel defense technique.  Worked under Dr. Haining Wang.</p>
+	</div>
+	<div id="edu-gpa" class="sub small-w">
+		 <div class="big-num">4.0</div>
+		<p>Computer Science GPA</p>
+	</div>
+	<div id="edu-icpc" class="sub med-w">
+		<header>
+			<h3><abbr title="Association for Computing Machinery">ACM</abbr> <abbr title="International Collegiate Programming Contest">ICPC</abbr></h2>
+		</header>
+		<ul>
+			<li>Only sophamore member from W&M to compete, placed 1<sup>st</sup> on-site, 12<sup>th</sup> out of 166 teams (2010 Regionals)</li>
+			<li>Lead first W&M team to qualify for world finals, placing 1<sup>st</sup> on-site and 2<sup>nd</sup> out of 164 teams (2011 Regionals)</li>
+			<li>Competed at the North American practice contest hosted by Univeristy of Chicago, and world finals hosted by University of Warsaw in Warsaw, Poland (2012 World Finals)</li>
+		</ul>
+	</div>
+</div>

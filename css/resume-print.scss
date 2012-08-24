@@ -1,8 +1,6 @@
 @import "base";
-@import "simple";
+@import "ui";
 
-$grid_pad:		.4%;
-$border_std:	$border_size solid $border_color;
 
 * {
 	margin: 0px;
@@ -37,15 +35,4 @@ footer {
 
 // .class
 
-.code {
-	font-family: consolas, monospace;
-	border-radius: 4px;
-	background-color: #ddd;
-	padding: 1px;
-}
-
 // #id
-
-#return {
-	display: none;
-}

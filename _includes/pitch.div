@@ -1,0 +1,12 @@
+<div id="why" class="container">
+	<header>
+		<h1>Why {{ page.company }} should  hire me</h1>
+	</header>
+	<section id="pitch">
+		<ul>
+			<li>{{ page.reason1 }}</li>
+			<li>{{ page.reason2 }}</li>
+			<li>{{ page.reason3 }}</li>
+		</ul>
+	</section>
+</div>

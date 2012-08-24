@@ -17,10 +17,8 @@ body {
 h1 {
 	font-size: 150%;
 }
-nav {
-	display: inline;
-}
 footer {
+	text-align: right;
 	font-size: 90%;
 	
 	a {
@@ -81,9 +79,6 @@ footer {
 		-webkit-transition: border .5s ease, color .5s ease, fill .5s ease;
 	}
 }
-.svg-icon {
-
-}
 .label {
 	display: block;
 	clear: both;
@@ -127,16 +122,32 @@ footer {
 	float: right;
 	text-align: right;
 }
-.bg-link {
-	display: inline-block;
-}
 
 // #id
 
-#wrapper{
-	width: 60%;
+#wrapper {
 	height: 100%;
-	margin: 0% auto;
+	margin: 0 auto;
+}
+@media (min-width: 1599px) {
+	#wrapper{
+		width: 60%;
+	}
+}
+@media (min-width: 1199px) {
+	#wrapper {
+		width: 70%;
+	}
+}
+@media (min-width: 799px) {
+	#wrapper {
+		width: 80%;
+	}
+}
+@media (max-width: 798px) {
+	#wrapper {
+		width: 90%;
+	}
 }
 #top {
 	display: table;
@@ -152,7 +163,7 @@ footer {
 #name {
 	width: 40%;
 	text-align: left;
-	vertical-align: bottom;
+	vertical-align: middle;
 	border-left: 0;
 	color: $fg;
 
@@ -166,9 +177,6 @@ footer {
 		@include highlight($light-secondary,$fg);
 	}
 }
-#edu-nav {
-
-}
 #work-nav {
 	svg {
 		margin-top: 5px;
@@ -179,12 +187,15 @@ footer {
 	border-right: 0;
 }
 #why {
-	text-align: center;
 	border-bottom: 10px solid $fg;
 
 	h1 {
 		font-size: 200%;
 		font-style: small-caps;
+		text-align: center;		
+	}
+	section {
+		text-align: left;
 	}
 }
 #edu {

@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="author" content="Brett Cooley" />
-	<meta name="description" content="Personal website and blog" />
 	<title>{{ page.title }} - Brett Cooley</title>
 	<link rel="stylesheet" href="/css/resume-ui.css" />
+	<!-- <link rel="stylesheet" media="print" href="/css/resume-print.css" /> -->
 	<script type="text/javascript">
 	  /* var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-28907940-1']);
@@ -17,19 +17,18 @@
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })(); */
 	</script>
-	<script type="text/javascript" src="/js/jquery-1.8.js"></script>
 </head>
 <body>
 	<div id="wrapper">
 		<header id="top">
 			<div id="name" class="container icon">
-				<h1><a href="/">Brett Cooley</a></h1>
+				<h1><a href="/resume/{{ page.hash }}">Brett Cooley</a></h1>
 				<h2><a href="mailto:{{ site.email }}">{{ site.email }}</a></h2>
 				<h2><a href="tel:{{ site.phone }}">{{ site.phone_read }}</a></h2>
 			</div>
-			<a id="edu-nav" class="container icon" href="/edu">{% include edu.svg %}<span class="label">Education</span></a>
-			<a id="work-nav" class="container icon" href="/work">{% include work.svg %}<span class="label">Work</span></a>
-			<a id="skill-nav" class="container icon" href="/skill">{% include skill.svg %}<span class="label">Code</span></a>
+			<a id="edu-nav" class="container icon" href="/resume/{{ page.hash }}/edu">{% include edu.svg %}<span class="label">Education</span></a>
+			<a id="work-nav" class="container icon" href="/resume/{{ page.hash }}/work">{% include work.svg %}<span class="label">Work</span></a>
+			<a id="skill-nav" class="container icon" href="/resume/{{ page.hash }}/skills">{% include skill.svg %}<span class="label">Code</span></a>
 		</header>
 		<section>
 			<div id="content">
@@ -37,23 +36,8 @@
 			</div>
 		</section>
 		<footer class="container">
-			<a href="/resume-print.html">Printer friendly version</a> <span class="right"><a href="{{ site.self }}">Last Updated: {{ site.time | date: "%B %d, %Y"}}</a></span>
+			<!-- <a href="/resume/{{ page.hash }}/print">Printer friendly version</a> <span class="right"> --><a href="{{ site.self }}">Last Updated: {{ site.time | date: "%B %d, %Y"}}</a> <!-- </span> -->
 		</footer>
 	</div>
 </body>
-<!-- <script type="text/javascript" src="resume.json"></script> -->
-<script type="text/javascript">
-
-	function load_content(selector_id) {
-		console.log(selector_id);
-		// var section_id = $("#"+selector_id).attr("data");
-		// $("#"+section_id).fadeIn(2000);
-	}
-
-	$(document).ready(function() {
-		$(".icon").click(function() {
-			load_content($(this)[0].id);
-		});
-	});
-</script>
 </html>
