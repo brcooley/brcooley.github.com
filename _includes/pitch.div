@@ -8,5 +8,8 @@
 			<li>{{ page.reason2 }}</li>
 			<li>{{ page.reason3 }}</li>
 		</ul>
+		<h5>
+			Check out my <a href="/resume/{{ site.hash }}/work">work experience</a>, <a href="/resume/{{ site.hash }}/edu">education</a>, and <a href="/resume/{{ site.hash }}/code">code</a>; then get in touch with me via <a href="mailto:{{ site.email }}">email</a> or by <a href="tel:{{ site.phone }}">phone</a>.
+		</h5>
 	</section>
 </div>
