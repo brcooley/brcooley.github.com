@@ -1,0 +1,242 @@
+@import "base"; // Must be first, defines all variables
+@import "fonts";
+@import "html5reset"; // Should be last so reset applies correctly
+
+body {
+	font: 62.5% $sans;
+	background-color: $fg;
+	color: $bg;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $sans;
+}
+h1, h2 {
+	font-size: 1.6em;
+	font-variant: small-caps;
+}
+h3, h4 {
+	font-size: 1.3em;
+}
+h5, h6 {
+	font-size: 1.15em;
+	font-weight: bold;
+}
+a {
+    @include transition("color .5s ease");
+    color: $link;
+
+	&:visited {
+    	color: $link-visit;
+    }
+    &:hover, &:active {
+        @include transition("color .5s ease");
+        color: $link-hover;
+    }
+}
+ul li {
+	padding-bottom: 8px;
+
+	&:before {
+		content: "\274F\0020"; //00AC 222B 274F
+		font-size: 1.2em;
+	}
+}
+footer {
+	position: absolute;
+	top: 1700px;
+	height: 170px;
+
+	a {
+		line-height: 130px;
+		text-align: center;
+		background-color: $bg;
+		@include transition("background .5s ease, color .5s ease");
+
+		&:hover {
+			@include transition("background .5s ease, color .5s ease");
+			background-color: $dark-emp;
+		}
+
+		&:visited {
+			color: $fg;
+		}
+	}
+}
+
+//// .CLASS ////
+.container {
+	margin: 10px;
+	padding: 10px;
+	background-color: $bg;
+	color: $fg;
+
+	header {
+		margin-bottom: 10px;
+
+		h2 {
+			font-weight: bold;
+		}
+		h4 {
+			display: inline-block;
+		}
+		h6 {
+			float: right;
+			font-size: 1em;
+			font-weight: normal;
+			font-style: italic;
+		}
+	}
+}
+.mason {
+	position: relative;
+	float: left;
+}
+.icon {
+	display: inline-block;
+	float: left;
+
+	text-align: center;
+	vertical-align: middle;
+
+	color: $icon-label-hide;
+	fill: $icon-color;
+
+	h4 {
+		color: $fg;
+	}
+
+	@include transition("color .75s ease, background .75s ease, fill .5s ease");
+
+	&:hover {
+		@include transition("color .5s ease, background .5s ease, fill .5s ease");
+		color: $icon-label-show;
+		fill: $icon-hover;
+		background-color: $dark-emp;
+	}
+}
+.label {
+	display: block;
+	clear: both;
+
+	font-variant: small-caps;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.small-w {
+	width: 150px;
+}
+.med-w {
+	width: 320px;
+}
+.large-w {
+	width: 660px;
+}
+.small-h {
+	height: 150px;
+}
+.med-h {
+	height: 320px;
+}
+.large-h {
+	height: 660px;
+}
+.full-page {
+	width: 1000px;
+}
+.stat {
+	text-align: center;
+
+	.big-num {
+		line-height: 100%;
+		font-weight: bold;
+		font-size: 4em;
+		clear: both;
+	}
+
+	p {
+		font-style: italic;
+		text-align: inherit;
+	}
+}
+
+//// #ID ////
+#wrapper {
+	width: 1020px;
+	max-height: 1900px;
+	font-size: 1.4em;
+	margin: 0 auto;
+}
+#top {
+	clear: both;
+	width: 100%;
+}
+#home-nav {
+	text-align: left;
+	color: $fg;
+
+	h1 {
+		position: relative;
+		left: -34px;
+		font-family: 'Droid Sans Mono', monospace;
+		text-transform: uppercase;
+	}
+}
+#first-name {
+	top: -51px;
+	font-size: 118px;
+}
+#last-name {
+	top: -120px;
+	font-size: 100px;
+}
+#content {
+	position: relative;
+	clear: both;
+}
+#why h2 {
+	font-size: 2em;
+}
+
+
+#work-ms, #edu-res {
+	top: -340px;
+}
+#skill-lang, #edu-gpa {
+	left: -680px;
+}
+#work-dy {
+	top: -1020px;
+	left: 340px;
+}
+#work-wm-l {
+	position: absolute;
+	top: 680px;
+	left: 680px;
+}
+#edu-icpc, #skill-yr {
+	top: -680px;
+	left: -170px;
+}
+#skill-lang {
+	height: 830px;
+}
+#skill-gh {
+	position: absolute;
+	top: 1020px;
+	left: 510px;
+	width: 490px;
+}
+#work-wm-r {
+	position: absolute;
+	top: 1190px;
+	left: 170px;
+}
+#skill-so {
+	position: absolute;
+	top: 1360px;
+	left: 510px;
+	width: 490px;
+}
+// #colophon {
+// 	margin-top: 20px;
+// }
