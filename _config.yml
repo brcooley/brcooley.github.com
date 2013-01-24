@@ -8,9 +8,14 @@ permalink: /posts/:year/:month/:day/:title
 name: Syntax Optional
 full-name: Brett Cooley
 email: brett@cooleyweb.org
+email_trunc: brett@...
 phone: +13036018090
 phone_read: 303 601 8090
-self: https://github.com/brcooley/brcooley.github.com
+home: //cooleyweb.org
+self: //github.com/brcooley/brcooley.github.com
+license: //github.com/brcooley/brcooley.github.com/blob/master/license
+github: //github.com/brcooley
+stack: //stackoverflow.com/users/950912
 
 # exclude files for generated site
 exclude:
