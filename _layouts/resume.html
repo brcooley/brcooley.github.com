@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Brett Cooley" />
+	<title>{{ page.title }} - Brett Cooley</title>
+	<link rel="stylesheet" href="/css/resume-masonry.css" />
+	<!-- <link rel="stylesheet" media="print" href="/css/resume-print.css" /> -->
+	{% include ga.js %}
+</head>
+<body>
+	<div id="wrapper">
+		<header id="top">
+			<a id="home-nav" class="container icon med-w small-h" href="/resume"><h1 id="first-name">Brett</h1><h1 id="last-name">Cooley</h1></a>
+			<a id="phone-nav" class="container icon small-w small-h" href="tel:{{ site.phone }}">{% include phone.svg %}<span class="label">{{ site.phone_read }}</span></a>
+			<a id="email-nav" class="container icon small-w small-h" href="mailto:{{ site.email }}">{% include email.svg %}<span class="label">{{ site.email_trunc }}</span></a>
+			<a id="gh-nav" class="container icon small-w small-h" href="{{ site.github }}">{% include gh.svg %}<span class="label">GitHub</span></a>
+			<a id="so-nav" class="container icon small-w small-h" href="{{ site.stack }}">{% include so.svg %}<span class="label">Stack Overflow</span></a>
+		</header>
+		<section id="content">
+			{{ content }}
+		</section>
+		<footer>
+			<a class="container icon med-w small-h" href="{{ site.home }}"><h4>Blog</h4></a>
+			<a class="container icon med-w small-h" href="{{ site.license }}"><h4>License</h4></a>
+			<a class="container icon med-w small-h" href="{{ site.self }}"><h4>Last Updated: {{ site.time | date: "%B %d, %Y"}}</h4></a>
+		</footer>
+	</div>
+	{% include who.js %}
+</body>
+</html>
