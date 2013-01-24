@@ -1,0 +1,31 @@
+// Base variables
+
+$sans: "Open Sans", Tahoma, sans-serif;
+$serif: "Droid Serif", Times, "Times New Roman", serif;
+
+$light: #ddd;
+$light-emp: #fff;
+$dark: #222;
+$dark-emp: #000;
+$accent: #8db500;
+
+$fg: $light;
+$bg: $dark;
+$link: $accent;
+$link-hover: #d4ff00;
+$link-visit: desaturate($link, 50%);
+$border-color: $light;
+$icon-label-hide: rgba(201,201,201,0); // Should be transparent, color is defined for transition
+$icon-label-show: $fg;
+$icon-color: $light; // rgba(255,255,255,0.8);
+$icon-hover: $light-emp;
+
+
+// Mixins
+
+@mixin transition($desc) {
+	-webkit-transition: unquote($desc);
+	   -moz-transition: unquote($desc);
+		 -o-transition: unquote($desc);
+			transition: unquote($desc);
+}
