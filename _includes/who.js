@@ -60,6 +60,10 @@
 			'name': 'Square',
 			'reasons': [distributed, tech.format('Square'), craft]
 		},
+		'e4660a': {
+			'name': 'CloudFlare',
+			'reasons': [fullStack, network, tools.format('CloudFlare')]
+		},
 		'bb0347': {
 			'name': 'you',
 			'reasons': [general, craft, fullStack]
