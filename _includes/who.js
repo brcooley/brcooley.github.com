@@ -22,43 +22,43 @@
 	var reasons = {
 		'1720d8': {
 			'name': 'Github',
-			'reasons': [fullStack, distributed, tools.format(name)]
+			'reasons': [fullStack, distributed, tools.format('Github')]
 		},
 		'd722b1': {
 			'name': 'Twilio',
-			'reasons': [api, distributed, tools.format(name)]
+			'reasons': [api, distributed, tools.format('Twilio')]
 		},
 		'26f9a1': {
 			'name': 'Cloudera',
-			'reasons': [distributed, tools.format(name), craft]
+			'reasons': [distributed, tools.format('Cloudera'), craft]
 		},
 		'f09f14': {
 			'name': 'Netflix',
-			'reasons': [measure, distributed, automation.format(name)]
+			'reasons': [measure, distributed, automation.format('Netflix')]
 		},
 		'daa4f9': {
 			'name': 'Heroku',
-			'reasons': [distributed, network, tools.format(name)]
+			'reasons': [distributed, network, tools.format('Heroku')]
 		},
 		'099137': {
 			'name': 'Mozilla',
-			'reasons': [craft, network, world.format(name)]
+			'reasons': [craft, network, world.format('Mozilla')]
 		},
 		'afd623': {
 			'name': 'SpaceX',
-			'reasons': [fullStack, measure, tech.format(name)]
+			'reasons': [fullStack, measure, tech.format('SpaceX')]
 		},
 		'f89f85': {
 			'name': 'Tesla',
-			'reasons': [general, craft, tech.format(name)]
+			'reasons': [general, craft, tech.format('Tesla')]
 		},
 		'0fe8e0': {
 			'name': 'IFTTT',
-			'reasons': [fullStack, automation.format(name), craft]
+			'reasons': [fullStack, automation.format('IFTTT'), craft]
 		},
 		'c11092': {
 			'name': 'Square',
-			'reasons': [distributed, tech.format(name), craft]
+			'reasons': [distributed, tech.format('Square'), craft]
 		},
 		'bb0347': {
 			'name': 'you',
