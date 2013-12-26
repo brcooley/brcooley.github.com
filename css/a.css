@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #709070;
+    font-family: monospace;
+    box-sizing: border-box;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+
+    -webkit-transition: color 0.5s ease;
+       -moz-transition: color 0.5s ease;
+            transition: color 0.5s ease;
+}
+a:hover, a:active {
+    color: #A8BBA8;
+}
+a:focus {
+    outline: none;
+}
+header {
+    font-size: 2em;
+}
+header > a {
+    float: left;
+    font-size: 0.8em;
+    padding: 0 1em;
+}
+article {
+    min-height: 4em;
+}
+p {
+    font-size: 1.2em;
+    color: #bbb;
+}
+footer {
+    font-size: 1.2em;
+    color: #bbb;
+}
+.rail {
+    margin: 1.5em auto;
+    width: 85%;
+    height: 1em;
+}
+.uname {
+    color: #ddd;
+}
+.const, .const:hover, .const:active {
+    color: #709070;
+}
+.child {
+    float: right;
+    padding-left: 4em;
+}
+#art {
+    margin: 0 auto;
+}
+rect {
+    stroke: #222;
+    stroke-width: 0px;
+}

@@ -1,52 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="author" content="Brett Cooley" />
-	<meta name="description" content="Personal website and blog" />
-	<title>{% if page.title != 'Syntax Optional' %}{{ site.name }} - {% endif %}{{ page.title }}</title>
-	<link rel="alternate" type="application/atom+xml" title="Syntax Optional - Atom" href="http://feeds.feedburner.com/SyntaxOptional" />
-	<link rel="stylesheet" href="/css/master.css" />
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-28907940-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-	</script>
+	<title>Syntax Optional</title>
+	<link rel="stylesheet" href="/css/a.css" />
+	{% include ga.js %}
+	{% include jquery.min.js %}
+	{% if page.title == "Main" %}
+		{% include d3v3.min.js %}
+	{% endif %}
 </head>
-
 <body>
-
-	<header>
-		<div class="container">
-			<p id="logo"><a href="/">Syntax Optional</a></p>
-			<nav>
-				<ul class="clearfix">
-					<li{% if page.title == 'About' %} class="selected"{% endif %}><a href="/about">About</a></li>
-					<li{% if page.title == 'GPG Key' %} class="selected"{% endif %}><a href="/gpg">GPG Key</a></li>
-					<li{% if page.title == 'Resume' %} class="selected"{% endif %}><a href="/resume">Resume</a></li>
-					<li{% if page.title == 'Posts' %} class="selected"{% endif %}><a href="/posts">Posts</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-
-	<section id="content-wrap">
-		<div class="container">
-
-		{{ content }}
-
-		</div>
-	</section>
-
-	<footer class="container">
-		<p>Copyright &copy; 2011&ndash;{{ site.time | date: "%Y" }}&nbsp; <a href="mailto:{{site.email}}">Brett Cooley</a></p>
-	</div>
+	<header class="rail">
+        <a id="main" href="/" tabindex="1"><span class="uname">br</span><span class="const">ett_</span><span class="uname">cooley</span></a>
+        <a class="child" href="/about" tabindex="3">about</a>
+        <a class="child" href="/resume" tabindex="2">resume</a>
+    </header>
+    {{ content }}
+    <footer class="rail">
+        - 2013 -
+    </footer>
 </body>
+{% if page.title == "Main" %}
+	{% include a.js %}
 </html>
