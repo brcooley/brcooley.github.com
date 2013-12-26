@@ -3,13 +3,11 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="author" content="Brett Cooley" />
-	<title>Syntax Optional</title>
+	<title>{% if page.title != 'Syntax Optional' %}{{ site.name }} - {% endif %}{{ page.title }}</title>
 	<link rel="stylesheet" href="/css/a.css" />
 	{% include ga.js %}
 	{% include jquery.min.js %}
-	{% if page.title == "Main" %}
-		{% include d3v3.min.js %}
-	{% endif %}
+	{% if page.title == 'Main' %}{% include d3v3.min.js %}{% endif %}
 </head>
 <body>
 	<header class="rail">
@@ -22,6 +20,6 @@
         - 2013 -
     </footer>
 </body>
-{% if page.title == "Main" %}
-	{% include a.js %}
+{% if page.title == 'Main' %}{% include a.js %}{% endif %}
 </html>
+
