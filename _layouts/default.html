@@ -5,9 +5,9 @@
 	<meta name="author" content="Brett Cooley" />
 	<title>{% if page.title != 'Syntax Optional' %}{{ site.name }} - {% endif %}{{ page.title }}</title>
 	<link rel="stylesheet" href="/css/a.css" />
-	{% include ga.js %}
-	{% include jquery.min.js %}
-	{% if page.title == 'Syntax Optional' %}{% include d3v3.min.js %}{% endif %}
+	<script src="/js/ga.js"></script>
+	<script src="/js/jquery.min.js"></script>
+	{% if page.title == 'Syntax Optional' %}<script src="/js/d3.v3.min.js"></script>{% endif %}
 </head>
 <body>
 	<header class="rail">
@@ -22,4 +22,3 @@
 </body>
 {% if page.title == 'Syntax Optional' %}{% include a.js %}{% endif %}
 </html>
-
