@@ -1,6 +1,5 @@
 auto: true
 server: true
-pygments: true
 markdown: maruku
 permalink: /posts/:year/:month/:day/:title
 
